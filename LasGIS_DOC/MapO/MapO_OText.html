@@ -1,111 +1,111 @@
 <html>
 
 <head>
-  <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+  <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
   <link rel="stylesheet" type="text/css" href="../images/default.css">
-  <title>Тело графического объекта типа надпись (OText)</title>
+  <title>РўРµР»Рѕ РіСЂР°С„РёС‡РµСЃРєРѕРіРѕ РѕР±СЉРµРєС‚Р° С‚РёРїР° РЅР°РґРїРёСЃСЊ (OText)</title>
 </head>
 
 <body>
 
-<h2>1.6.Тело графического объекта типа надпись (OText)</h2>
+<h2>1.6.РўРµР»Рѕ РіСЂР°С„РёС‡РµСЃРєРѕРіРѕ РѕР±СЉРµРєС‚Р° С‚РёРїР° РЅР°РґРїРёСЃСЊ (OText)</h2>
 
 <table cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top"><img src="../images/forefinger.jpg" width="16" height="16"></td>
     <td><p class="Prog">class <span class="ProgTerm">OText</span> : public <a href="MapO_Object.html">MapObject</a> {<br>
-      &nbsp;&nbsp; char * <span class="ProgTerm">Text</span>;&nbsp; <span class="ProgComment">// строка текста</span><br>
-      &nbsp;&nbsp; long <span class="ProgTerm">Height</span>;&nbsp; <span class="ProgComment">// высота шрифта в см. местности</span><br>
+      &nbsp;&nbsp; char * <span class="ProgTerm">Text</span>;&nbsp; <span class="ProgComment">// СЃС‚СЂРѕРєР° С‚РµРєСЃС‚Р°</span><br>
+      &nbsp;&nbsp; long <span class="ProgTerm">Height</span>;&nbsp; <span class="ProgComment">// РІС‹СЃРѕС‚Р° С€СЂРёС„С‚Р° РІ СЃРј. РјРµСЃС‚РЅРѕСЃС‚Рё</span><br>
       &nbsp;&nbsp; <a href="#MapO_eFont">eFont</a> * <span class="ProgTerm">Font</span>;&nbsp;
-      <span class="ProgComment">// описание шрифта</span><br>
+      <span class="ProgComment">// РѕРїРёСЃР°РЅРёРµ С€СЂРёС„С‚Р°</span><br>
       &nbsp;&nbsp; <a href="MapO_eLine.html">eLine</a> * <span class="ProgTerm">ELine</span>;
-      <span class="ProgComment">// элементарная линия, определяющая начало и
-    направление вывода текста</span><br>
-      }; <span class="ProgComment">// размер структуры 40+8=48 байт</span></p>
+      <span class="ProgComment">// СЌР»РµРјРµРЅС‚Р°СЂРЅР°СЏ Р»РёРЅРёСЏ, РѕРїСЂРµРґРµР»СЏСЋС‰Р°СЏ РЅР°С‡Р°Р»Рѕ Рё
+    РЅР°РїСЂР°РІР»РµРЅРёРµ РІС‹РІРѕРґР° С‚РµРєСЃС‚Р°</span><br>
+      }; <span class="ProgComment">// СЂР°Р·РјРµСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ 40+8=48 Р±Р°Р№С‚</span></p>
     </td>
   </tr>
 </table>
 
-<p>Графический объект типа надпись может быть
-двух типов:</p>
+<p>Р“СЂР°С„РёС‡РµСЃРєРёР№ РѕР±СЉРµРєС‚ С‚РёРїР° РЅР°РґРїРёСЃСЊ РјРѕР¶РµС‚ Р±С‹С‚СЊ
+РґРІСѓС… С‚РёРїРѕРІ:</p>
 
-<p>1 – надпись как самостоятельный графический
-объект,</p>
+<p>1 вЂ“ РЅР°РґРїРёСЃСЊ РєР°Рє СЃР°РјРѕСЃС‚РѕСЏС‚РµР»СЊРЅС‹Р№ РіСЂР°С„РёС‡РµСЃРєРёР№
+РѕР±СЉРµРєС‚,</p>
 
-<p>2 – надпись, принадлежащая к некоторому типу
-графического объекта (например, принадлежит к 15-ой линии).</p>
+<p>2 вЂ“ РЅР°РґРїРёСЃСЊ, РїСЂРёРЅР°РґР»РµР¶Р°С‰Р°СЏ Рє РЅРµРєРѕС‚РѕСЂРѕРјСѓ С‚РёРїСѓ
+РіСЂР°С„РёС‡РµСЃРєРѕРіРѕ РѕР±СЉРµРєС‚Р° (РЅР°РїСЂРёРјРµСЂ, РїСЂРёРЅР°РґР»РµР¶РёС‚ Рє 15-РѕР№ Р»РёРЅРёРё).</p>
 
-<p>В первом случае в заголовке объекта (см. <a
-href="MapO_Object.html">MapObject</a>) параметр <span class="Refer">&lt;Type&gt;</span>
-содержит значение “4”, а параметр <span class="Refer">&lt;TextFlag&gt;</span>
-при работе не учитывается. В этом случае
-настройки шрифта хранятся в настройках
-типо-объекта “Надпись” (как надпись 16-я).</p>
+<p>Р’ РїРµСЂРІРѕРј СЃР»СѓС‡Р°Рµ РІ Р·Р°РіРѕР»РѕРІРєРµ РѕР±СЉРµРєС‚Р° (СЃРј. <a
+href="MapO_Object.html">MapObject</a>) РїР°СЂР°РјРµС‚СЂ <span class="Refer">&lt;Type&gt;</span>
+СЃРѕРґРµСЂР¶РёС‚ Р·РЅР°С‡РµРЅРёРµ вЂњ4вЂќ, Р° РїР°СЂР°РјРµС‚СЂ <span class="Refer">&lt;TextFlag&gt;</span>
+РїСЂРё СЂР°Р±РѕС‚Рµ РЅРµ СѓС‡РёС‚С‹РІР°РµС‚СЃСЏ. Р’ СЌС‚РѕРј СЃР»СѓС‡Р°Рµ
+РЅР°СЃС‚СЂРѕР№РєРё С€СЂРёС„С‚Р° С…СЂР°РЅСЏС‚СЃСЏ РІ РЅР°СЃС‚СЂРѕР№РєР°С…
+С‚РёРїРѕ-РѕР±СЉРµРєС‚Р° вЂњРќР°РґРїРёСЃСЊвЂќ (РєР°Рє РЅР°РґРїРёСЃСЊ 16-СЏ).</p>
 
-<p>Во втором случае параметр <span class="Refer">&lt;Type&gt;</span> и параметр
-<span class="Refer">&lt;TypeNum&gt;</span> содержит значение скрепленного
-типо-объекта (например, плоскость 17-я), а параметр
-<span class="Refer">&lt;Text Flag&gt;</span> содержит значение “<strong><u>TRUE</u></strong>”. В этом
-случае настройки шрифта хранятся в настройках
-скрепленного типо-объекта.</p>
+<p>Р’Рѕ РІС‚РѕСЂРѕРј СЃР»СѓС‡Р°Рµ РїР°СЂР°РјРµС‚СЂ <span class="Refer">&lt;Type&gt;</span> Рё РїР°СЂР°РјРµС‚СЂ
+<span class="Refer">&lt;TypeNum&gt;</span> СЃРѕРґРµСЂР¶РёС‚ Р·РЅР°С‡РµРЅРёРµ СЃРєСЂРµРїР»РµРЅРЅРѕРіРѕ
+С‚РёРїРѕ-РѕР±СЉРµРєС‚Р° (РЅР°РїСЂРёРјРµСЂ, РїР»РѕСЃРєРѕСЃС‚СЊ 17-СЏ), Р° РїР°СЂР°РјРµС‚СЂ
+<span class="Refer">&lt;Text Flag&gt;</span> СЃРѕРґРµСЂР¶РёС‚ Р·РЅР°С‡РµРЅРёРµ вЂњ<strong><u>TRUE</u></strong>вЂќ. Р’ СЌС‚РѕРј
+СЃР»СѓС‡Р°Рµ РЅР°СЃС‚СЂРѕР№РєРё С€СЂРёС„С‚Р° С…СЂР°РЅСЏС‚СЃСЏ РІ РЅР°СЃС‚СЂРѕР№РєР°С…
+СЃРєСЂРµРїР»РµРЅРЅРѕРіРѕ С‚РёРїРѕ-РѕР±СЉРµРєС‚Р°.</p>
 
-<p>В любом случае настройки могут быть
-прикреплены к данному объекту. Тогда они
-записываются вместе с объектом и хранятся в
-параметре <span class="Refer">&lt;Font&gt;</span>. Если параметр <span class="Refer">&lt;Font&gt;</span>
-содержит значение “<strong><u>NULL</u></strong>” это значит, что
-настройки необходимо брать в настройках
-типо-объекта, иначе необходимо пользоваться
-настройками из параметра <span class="Refer">&lt;Font&gt;</span>.</p>
+<p>Р’ Р»СЋР±РѕРј СЃР»СѓС‡Р°Рµ РЅР°СЃС‚СЂРѕР№РєРё РјРѕРіСѓС‚ Р±С‹С‚СЊ
+РїСЂРёРєСЂРµРїР»РµРЅС‹ Рє РґР°РЅРЅРѕРјСѓ РѕР±СЉРµРєС‚Сѓ. РўРѕРіРґР° РѕРЅРё
+Р·Р°РїРёСЃС‹РІР°СЋС‚СЃСЏ РІРјРµСЃС‚Рµ СЃ РѕР±СЉРµРєС‚РѕРј Рё С…СЂР°РЅСЏС‚СЃСЏ РІ
+РїР°СЂР°РјРµС‚СЂРµ <span class="Refer">&lt;Font&gt;</span>. Р•СЃР»Рё РїР°СЂР°РјРµС‚СЂ <span class="Refer">&lt;Font&gt;</span>
+СЃРѕРґРµСЂР¶РёС‚ Р·РЅР°С‡РµРЅРёРµ вЂњ<strong><u>NULL</u></strong>вЂќ СЌС‚Рѕ Р·РЅР°С‡РёС‚, С‡С‚Рѕ
+РЅР°СЃС‚СЂРѕР№РєРё РЅРµРѕР±С…РѕРґРёРјРѕ Р±СЂР°С‚СЊ РІ РЅР°СЃС‚СЂРѕР№РєР°С…
+С‚РёРїРѕ-РѕР±СЉРµРєС‚Р°, РёРЅР°С‡Рµ РЅРµРѕР±С…РѕРґРёРјРѕ РїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ
+РЅР°СЃС‚СЂРѕР№РєР°РјРё РёР· РїР°СЂР°РјРµС‚СЂР° <span class="Refer">&lt;Font&gt;</span>.</p>
 
-<p>Параметр <span class="Refer">&lt;Text&gt;</span> содержит текст в <strong>RichText</strong> формате.
-Символ “0x00” означает окончание текста, два
-символа “0x0D 0x0A” - перевод строки. В <strong>RichText</strong> формате
-можно также задавать размер, формат и цвет
-шрифта.</p>
+<p>РџР°СЂР°РјРµС‚СЂ <span class="Refer">&lt;Text&gt;</span> СЃРѕРґРµСЂР¶РёС‚ С‚РµРєСЃС‚ РІ <strong>RichText</strong> С„РѕСЂРјР°С‚Рµ.
+РЎРёРјРІРѕР» вЂњ0x00вЂќ РѕР·РЅР°С‡Р°РµС‚ РѕРєРѕРЅС‡Р°РЅРёРµ С‚РµРєСЃС‚Р°, РґРІР°
+СЃРёРјРІРѕР»Р° вЂњ0x0D 0x0AвЂќ - РїРµСЂРµРІРѕРґ СЃС‚СЂРѕРєРё. Р’ <strong>RichText</strong> С„РѕСЂРјР°С‚Рµ
+РјРѕР¶РЅРѕ С‚Р°РєР¶Рµ Р·Р°РґР°РІР°С‚СЊ СЂР°Р·РјРµСЂ, С„РѕСЂРјР°С‚ Рё С†РІРµС‚
+С€СЂРёС„С‚Р°.</p>
 
-<p>Параметр <span class="Refer">&lt;Height&gt;</span> содержит высоту шрифта в
-сантиметрах местности. При выводе высота
-пересчитывается в соответствии с масштабом
-вывода.</p>
+<p>РџР°СЂР°РјРµС‚СЂ <span class="Refer">&lt;Height&gt;</span> СЃРѕРґРµСЂР¶РёС‚ РІС‹СЃРѕС‚Сѓ С€СЂРёС„С‚Р° РІ
+СЃР°РЅС‚РёРјРµС‚СЂР°С… РјРµСЃС‚РЅРѕСЃС‚Рё. РџСЂРё РІС‹РІРѕРґРµ РІС‹СЃРѕС‚Р°
+РїРµСЂРµСЃС‡РёС‚С‹РІР°РµС‚СЃСЏ РІ СЃРѕРѕС‚РІРµС‚СЃС‚РІРёРё СЃ РјР°СЃС€С‚Р°Р±РѕРј
+РІС‹РІРѕРґР°.</p>
 
-<p>Элементарная линия <span class="Refer">&lt;ELine&gt;</span> определяет
-позицию надписи на карте. Если линия состоит из
-одной точки, то начало надписи будет находиться в
-этой точке. Если у линии – две точки, то вторая
-задает направление вывода. Если линия состоит из
-трех точек, то надпись будет располагаться по
-окружности, образованной этими тремя точками. В
-случае же большего числа точек, надпись будет
-располагаться на полученном полигоне. </p>
+<p>Р­Р»РµРјРµРЅС‚Р°СЂРЅР°СЏ Р»РёРЅРёСЏ <span class="Refer">&lt;ELine&gt;</span> РѕРїСЂРµРґРµР»СЏРµС‚
+РїРѕР·РёС†РёСЋ РЅР°РґРїРёСЃРё РЅР° РєР°СЂС‚Рµ. Р•СЃР»Рё Р»РёРЅРёСЏ СЃРѕСЃС‚РѕРёС‚ РёР·
+РѕРґРЅРѕР№ С‚РѕС‡РєРё, С‚Рѕ РЅР°С‡Р°Р»Рѕ РЅР°РґРїРёСЃРё Р±СѓРґРµС‚ РЅР°С…РѕРґРёС‚СЊСЃСЏ РІ
+СЌС‚РѕР№ С‚РѕС‡РєРµ. Р•СЃР»Рё Сѓ Р»РёРЅРёРё вЂ“ РґРІРµ С‚РѕС‡РєРё, С‚Рѕ РІС‚РѕСЂР°СЏ
+Р·Р°РґР°РµС‚ РЅР°РїСЂР°РІР»РµРЅРёРµ РІС‹РІРѕРґР°. Р•СЃР»Рё Р»РёРЅРёСЏ СЃРѕСЃС‚РѕРёС‚ РёР·
+С‚СЂРµС… С‚РѕС‡РµРє, С‚Рѕ РЅР°РґРїРёСЃСЊ Р±СѓРґРµС‚ СЂР°СЃРїРѕР»Р°РіР°С‚СЊСЃСЏ РїРѕ
+РѕРєСЂСѓР¶РЅРѕСЃС‚Рё, РѕР±СЂР°Р·РѕРІР°РЅРЅРѕР№ СЌС‚РёРјРё С‚СЂРµРјСЏ С‚РѕС‡РєР°РјРё. Р’
+СЃР»СѓС‡Р°Рµ Р¶Рµ Р±РѕР»СЊС€РµРіРѕ С‡РёСЃР»Р° С‚РѕС‡РµРє, РЅР°РґРїРёСЃСЊ Р±СѓРґРµС‚
+СЂР°СЃРїРѕР»Р°РіР°С‚СЊСЃСЏ РЅР° РїРѕР»СѓС‡РµРЅРЅРѕРј РїРѕР»РёРіРѕРЅРµ. </p>
 
-<p class="Remark">Смотри также:</p>
+<p class="Remark">РЎРјРѕС‚СЂРё С‚Р°РєР¶Рµ:</p>
 
-<p class="Notice"><a href="MapO_Object.html">Общий заголовок графического
-объекта <strong>(MapObject)</strong></a></p>
+<p class="Notice"><a href="MapO_Object.html">РћР±С‰РёР№ Р·Р°РіРѕР»РѕРІРѕРє РіСЂР°С„РёС‡РµСЃРєРѕРіРѕ
+РѕР±СЉРµРєС‚Р° <strong>(MapObject)</strong></a></p>
 
-<p class="Notice"><a href="MapO_eLine.html">Формат элементарной линии (<strong>eLine</strong>)</a></p>
+<p class="Notice"><a href="MapO_eLine.html">Р¤РѕСЂРјР°С‚ СЌР»РµРјРµРЅС‚Р°СЂРЅРѕР№ Р»РёРЅРёРё (<strong>eLine</strong>)</a></p>
 
-<p class="Notice"><a href="MapO_ePoint.html">Формат элементарной точки (<strong>ePoint</strong>)</a></p>
+<p class="Notice"><a href="MapO_ePoint.html">Р¤РѕСЂРјР°С‚ СЌР»РµРјРµРЅС‚Р°СЂРЅРѕР№ С‚РѕС‡РєРё (<strong>ePoint</strong>)</a></p>
 
-<h3><strong>1.6.1 <a name="MapO_eFont">Формат описания ШРИФТА</a></strong></h3>
+<h3><strong>1.6.1 <a name="MapO_eFont">Р¤РѕСЂРјР°С‚ РѕРїРёСЃР°РЅРёСЏ РЁР РР¤РўРђ</a></strong></h3>
 
 <table cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top"><img src="../images/forefinger.jpg" width="16" height="16"></td>
     <td><p class="Prog">struct <span class="ProgTerm">eFont</span> {<br>
       &nbsp;&nbsp; char * <span class="ProgTerm">Name</span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <span class="ProgComment">// название шрифта (Areal; Courier)</span><br>
-      &nbsp;&nbsp; COLORREF <span class="ProgTerm">TextColor; </span><span class="ProgComment">// цвет текста</span><br>
-      &nbsp;&nbsp; COLORREF <span class="ProgTerm">BkColor;&nbsp;&nbsp; </span><span class="ProgComment">// цвет фона</span><br>
+      <span class="ProgComment">// РЅР°Р·РІР°РЅРёРµ С€СЂРёС„С‚Р° (Areal; Courier)</span><br>
+      &nbsp;&nbsp; COLORREF <span class="ProgTerm">TextColor; </span><span class="ProgComment">// С†РІРµС‚ С‚РµРєСЃС‚Р°</span><br>
+      &nbsp;&nbsp; COLORREF <span class="ProgTerm">BkColor;&nbsp;&nbsp; </span><span class="ProgComment">// С†РІРµС‚ С„РѕРЅР°</span><br>
       &nbsp;&nbsp; UINT <span class="ProgTerm">Bold</span>:1;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <span class="ProgComment">// если “TRUE” - толстый шрифт</span><br>
+      <span class="ProgComment">// РµСЃР»Рё вЂњTRUEвЂќ - С‚РѕР»СЃС‚С‹Р№ С€СЂРёС„С‚</span><br>
       &nbsp;&nbsp; UINT <span class="ProgTerm">Italic</span>:1;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <span class="ProgComment">// если “TRUE” - наклонный шрифт</span><br>
-      &nbsp;&nbsp; UINT <span class="ProgTerm">Underline</span>:1;&nbsp;&nbsp; 
-      <span class="ProgComment">// если “TRUE” - шрифт с подчеркиванием</span><br>
+      <span class="ProgComment">// РµСЃР»Рё вЂњTRUEвЂќ - РЅР°РєР»РѕРЅРЅС‹Р№ С€СЂРёС„С‚</span><br>
+      &nbsp;&nbsp; UINT <span class="ProgTerm">Underline</span>:1;&nbsp;&nbsp;
+      <span class="ProgComment">// РµСЃР»Рё вЂњTRUEвЂќ - С€СЂРёС„С‚ СЃ РїРѕРґС‡РµСЂРєРёРІР°РЅРёРµРј</span><br>
       &nbsp;&nbsp; UINT <span class="ProgTerm">NoBK</span>:1;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <span class="ProgComment">// если “TRUE” - текст выводится без фона</span><br>
+      <span class="ProgComment">// РµСЃР»Рё вЂњTRUEвЂќ - С‚РµРєСЃС‚ РІС‹РІРѕРґРёС‚СЃСЏ Р±РµР· С„РѕРЅР°</span><br>
       }</p></td>
   </tr>
 </table>

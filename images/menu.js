@@ -1,4 +1,4 @@
-/** поиск элемента */
+/** РїРѕРёСЃРє СЌР»РµРјРµРЅС‚Р° */
 function getNodeFrame(nodeId, doc) {
   if (doc.getElementById) {
       return doc.getElementById(nodeId);
@@ -11,7 +11,7 @@ function getNodeFrame(nodeId, doc) {
   }
 }
 
-/** поиск элемента */
+/** РїРѕРёСЃРє СЌР»РµРјРµРЅС‚Р° */
 function getNode(nodeId) {
   var doc = document;
   var win = window;
@@ -136,7 +136,7 @@ function relPosY(which) {
 
 }
 
-//дополняет нулем часы либо минуты
+//РґРѕРїРѕР»РЅСЏРµС‚ РЅСѓР»РµРј С‡Р°СЃС‹ Р»РёР±Рѕ РјРёРЅСѓС‚С‹
 function num_fmt(p)
 {
     var z = new String(parseInt(p));
@@ -146,7 +146,7 @@ function num_fmt(p)
 
 }
 
-/** загружаем основной документ */
+/** Р·Р°РіСЂСѓР¶Р°РµРј РѕСЃРЅРѕРІРЅРѕР№ РґРѕРєСѓРјРµРЅС‚ */
 function LoadUrl(mainUrl, menuUrl, title) {
    if (mainUrl) {
       var mainNode = getNode("Doc_main");
@@ -163,7 +163,7 @@ function LoadUrl(mainUrl, menuUrl, title) {
    SetMainTitle(title);
 }
 
-/** загружаем главное меню */
+/** Р·Р°РіСЂСѓР¶Р°РµРј РіР»Р°РІРЅРѕРµ РјРµРЅСЋ */
 function SetMainTitle(text) {
    var title = getNode("Title_main");
    if (text && title) {
@@ -172,7 +172,7 @@ function SetMainTitle(text) {
    closeMenu();
 }
 
-/** загружаем подменю меню */
+/** Р·Р°РіСЂСѓР¶Р°РµРј РїРѕРґРјРµРЅСЋ РјРµРЅСЋ */
 function LoadMenu(subm0, subm1, subm2, subm3) {
   var iSub0 = 0,iSub1 = 0, iSub2 = 0, iSub3 = 0;
   var isView0 = true, isView1 = true, isView2 = true, isView3 = true;

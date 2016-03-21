@@ -1,571 +1,571 @@
 <html>
 
 <head>
-<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
 <meta NAME="GENERATOR" CONTENT="Microsoft FrontPage 4.0">
 <link rel="stylesheet" type="text/css" href="../images/default.css">
-<title>Главная конфигурация проекта (старый формат)</title>
+<title>Р“Р»Р°РІРЅР°СЏ РєРѕРЅС„РёРіСѓСЂР°С†РёСЏ РїСЂРѕРµРєС‚Р° (СЃС‚Р°СЂС‹Р№ С„РѕСЂРјР°С‚)</title>
 </head>
 
 <body>
 
-<h1>Главная конфигурация проекта (старый формат)</h1>
+<h1>Р“Р»Р°РІРЅР°СЏ РєРѕРЅС„РёРіСѓСЂР°С†РёСЏ РїСЂРѕРµРєС‚Р° (СЃС‚Р°СЂС‹Р№ С„РѕСЂРјР°С‚)</h1>
 
-<p ALIGN="JUSTIFY">В файле главной конфигурации
-находятся настройки проекта, в которой
-присутствует следующая информация</p>
+<p ALIGN="JUSTIFY">Р’ С„Р°Р№Р»Рµ РіР»Р°РІРЅРѕР№ РєРѕРЅС„РёРіСѓСЂР°С†РёРё
+РЅР°С…РѕРґСЏС‚СЃСЏ РЅР°СЃС‚СЂРѕР№РєРё РїСЂРѕРµРєС‚Р°, РІ РєРѕС‚РѕСЂРѕР№
+РїСЂРёСЃСѓС‚СЃС‚РІСѓРµС‚ СЃР»РµРґСѓСЋС‰Р°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ</p>
 
 <ul>
-  <li>где находятся графические и семантические
-    данные,</li>
-  <li>каким образом рисуются графические объекты,</li>
-  <li>как они связаны друг с другом,</li>
-  <li>какие поля доступны для проекта у семантических
-    баз,</li>
-  <li>и т.д.</li>
+  <li>РіРґРµ РЅР°С…РѕРґСЏС‚СЃСЏ РіСЂР°С„РёС‡РµСЃРєРёРµ Рё СЃРµРјР°РЅС‚РёС‡РµСЃРєРёРµ
+    РґР°РЅРЅС‹Рµ,</li>
+  <li>РєР°РєРёРј РѕР±СЂР°Р·РѕРј СЂРёСЃСѓСЋС‚СЃСЏ РіСЂР°С„РёС‡РµСЃРєРёРµ РѕР±СЉРµРєС‚С‹,</li>
+  <li>РєР°Рє РѕРЅРё СЃРІСЏР·Р°РЅС‹ РґСЂСѓРі СЃ РґСЂСѓРіРѕРј,</li>
+  <li>РєР°РєРёРµ РїРѕР»СЏ РґРѕСЃС‚СѓРїРЅС‹ РґР»СЏ РїСЂРѕРµРєС‚Р° Сѓ СЃРµРјР°РЅС‚РёС‡РµСЃРєРёС…
+    Р±Р°Р·,</li>
+  <li>Рё С‚.Рґ.</li>
 </ul>
 
-<p>Файла главной конфигурации проекта находится в
-общем каталоге проекта. Имя файла может быть
-любым (желательно до 8 знаков и без русских букв,
-для связи с DOS). Расширение файла – “<strong>.CFG</strong>”.</p>
+<p>Р¤Р°Р№Р»Р° РіР»Р°РІРЅРѕР№ РєРѕРЅС„РёРіСѓСЂР°С†РёРё РїСЂРѕРµРєС‚Р° РЅР°С…РѕРґРёС‚СЃСЏ РІ
+РѕР±С‰РµРј РєР°С‚Р°Р»РѕРіРµ РїСЂРѕРµРєС‚Р°. РРјСЏ С„Р°Р№Р»Р° РјРѕР¶РµС‚ Р±С‹С‚СЊ
+Р»СЋР±С‹Рј (Р¶РµР»Р°С‚РµР»СЊРЅРѕ РґРѕ 8 Р·РЅР°РєРѕРІ Рё Р±РµР· СЂСѓСЃСЃРєРёС… Р±СѓРєРІ,
+РґР»СЏ СЃРІСЏР·Рё СЃ DOS). Р Р°СЃС€РёСЂРµРЅРёРµ С„Р°Р№Р»Р° вЂ“ вЂњ<strong>.CFG</strong>вЂќ.</p>
 
-<p><strong>Структура файла</strong> состоит из следующих
-частей:</p>
+<p><strong>РЎС‚СЂСѓРєС‚СѓСЂР° С„Р°Р№Р»Р°</strong> СЃРѕСЃС‚РѕРёС‚ РёР· СЃР»РµРґСѓСЋС‰РёС…
+С‡Р°СЃС‚РµР№:</p>
 
 <table>
   <tr>
-    <th>Адрес в файле</th>
-    <th>Название блока</th>
+    <th>РђРґСЂРµСЃ РІ С„Р°Р№Р»Рµ</th>
+    <th>РќР°Р·РІР°РЅРёРµ Р±Р»РѕРєР°</th>
   </tr>
   <tr>
-    <td class="RefAdres">00h – 1Fh</td>
-    <td class="Refer">Заголовок</td>
+    <td class="RefAdres">00h вЂ“ 1Fh</td>
+    <td class="Refer">Р—Р°РіРѕР»РѕРІРѕРє</td>
   </tr>
   <tr>
-    <td class="RefAdres">20h – 7FFh </td>
-    <td class="Refer">Индексы</td>
+    <td class="RefAdres">20h вЂ“ 7FFh </td>
+    <td class="Refer">РРЅРґРµРєСЃС‹</td>
   </tr>
   <tr>
-    <td class="RefAdres">800h – до конца</td>
-    <td class="Refer">Блоки</td>
+    <td class="RefAdres">800h вЂ“ РґРѕ РєРѕРЅС†Р°</td>
+    <td class="Refer">Р‘Р»РѕРєРё</td>
   </tr>
 </table>
 
-<h2>1. Структура</h2>
+<h2>1. РЎС‚СЂСѓРєС‚СѓСЂР°</h2>
 
-<h3><a name="Container_Head">1.1. Структура заголовк</a>а</h3>
+<h3><a name="Container_Head">1.1. РЎС‚СЂСѓРєС‚СѓСЂР° Р·Р°РіРѕР»РѕРІРє</a>Р°</h3>
 
-<p>Структура заголовка контейнера старого
-формата не определяет внутреннюю структуру
-файла. Содержание файла определяется по его
-расширению (*.cfg).</p>
+<p>РЎС‚СЂСѓРєС‚СѓСЂР° Р·Р°РіРѕР»РѕРІРєР° РєРѕРЅС‚РµР№РЅРµСЂР° СЃС‚Р°СЂРѕРіРѕ
+С„РѕСЂРјР°С‚Р° РЅРµ РѕРїСЂРµРґРµР»СЏРµС‚ РІРЅСѓС‚СЂРµРЅРЅСЋСЋ СЃС‚СЂСѓРєС‚СѓСЂСѓ
+С„Р°Р№Р»Р°. РЎРѕРґРµСЂР¶Р°РЅРёРµ С„Р°Р№Р»Р° РѕРїСЂРµРґРµР»СЏРµС‚СЃСЏ РїРѕ РµРіРѕ
+СЂР°СЃС€РёСЂРµРЅРёСЋ (*.cfg).</p>
 
 <table>
   <tr>
-    <th>Позиция</th>
-    <th>Размер</th>
-    <th>Описание</th>
+    <th>РџРѕР·РёС†РёСЏ</th>
+    <th>Р Р°Р·РјРµСЂ</th>
+    <th>РћРїРёСЃР°РЅРёРµ</th>
   </tr>
   <tr>
     <td class="RefAdres">00h</td>
     <td>4(dword)</td>
-    <td>Адрес последнего блока</td>
+    <td>РђРґСЂРµСЃ РїРѕСЃР»РµРґРЅРµРіРѕ Р±Р»РѕРєР°</td>
   </tr>
   <tr>
     <td class="RefAdres">04h</td>
     <td>4(dword)</td>
-    <td>Размер файла конфигурации ( для след. блока )</td>
+    <td>Р Р°Р·РјРµСЂ С„Р°Р№Р»Р° РєРѕРЅС„РёРіСѓСЂР°С†РёРё ( РґР»СЏ СЃР»РµРґ. Р±Р»РѕРєР° )</td>
   </tr>
   <tr>
     <td class="RefAdres">08h</td>
     <td>24(char)</td>
-    <td>Текст принадлежн. &quot;ГЛОБАЛЬНАЯ &nbsp;
-    НАСТРОЙКА\0&quot;</td>
+    <td>РўРµРєСЃС‚ РїСЂРёРЅР°РґР»РµР¶РЅ. &quot;Р“Р›РћР‘РђР›Р¬РќРђРЇ &nbsp;
+    РќРђРЎРўР РћР™РљРђ\0&quot;</td>
   </tr>
 </table>
 
-<h3>1.2<a name="Container_Indexes">. Индексы</a></h3>
+<h3>1.2<a name="Container_Indexes">. РРЅРґРµРєСЃС‹</a></h3>
 
-<p>Индексы представляют собой массив адресов
-блоков внутри контейнера (<strong>“dword”</strong> или <strong>4 байта</strong>
-на один индекс). </p>
+<p>РРЅРґРµРєСЃС‹ РїСЂРµРґСЃС‚Р°РІР»СЏСЋС‚ СЃРѕР±РѕР№ РјР°СЃСЃРёРІ Р°РґСЂРµСЃРѕРІ
+Р±Р»РѕРєРѕРІ РІРЅСѓС‚СЂРё РєРѕРЅС‚РµР№РЅРµСЂР° (<strong>вЂњdwordвЂќ</strong> РёР»Рё <strong>4 Р±Р°Р№С‚Р°</strong>
+РЅР° РѕРґРёРЅ РёРЅРґРµРєСЃ). </p>
 
-<p>Располагаются индексы в области от конца
-заголовка (адрес <span class="RefAdres">20h</span>) до начала
-блоков (адрес <span class="RefAdres">800h</span>) При этом блоки с
-адреса <span class="RefAdres">400h</span> до адреса <span class="RefAdres">800h</span>
-зарезервированы для настройки семантических
-таблиц.</p>
+<p>Р Р°СЃРїРѕР»Р°РіР°СЋС‚СЃСЏ РёРЅРґРµРєСЃС‹ РІ РѕР±Р»Р°СЃС‚Рё РѕС‚ РєРѕРЅС†Р°
+Р·Р°РіРѕР»РѕРІРєР° (Р°РґСЂРµСЃ <span class="RefAdres">20h</span>) РґРѕ РЅР°С‡Р°Р»Р°
+Р±Р»РѕРєРѕРІ (Р°РґСЂРµСЃ <span class="RefAdres">800h</span>) РџСЂРё СЌС‚РѕРј Р±Р»РѕРєРё СЃ
+Р°РґСЂРµСЃР° <span class="RefAdres">400h</span> РґРѕ Р°РґСЂРµСЃР° <span class="RefAdres">800h</span>
+Р·Р°СЂРµР·РµСЂРІРёСЂРѕРІР°РЅС‹ РґР»СЏ РЅР°СЃС‚СЂРѕР№РєРё СЃРµРјР°РЅС‚РёС‡РµСЃРєРёС…
+С‚Р°Р±Р»РёС†.</p>
 
-<p><u>Вложенности подблоков не предусмотрено</u>.</p>
+<p><u>Р’Р»РѕР¶РµРЅРЅРѕСЃС‚Рё РїРѕРґР±Р»РѕРєРѕРІ РЅРµ РїСЂРµРґСѓСЃРјРѕС‚СЂРµРЅРѕ</u>.</p>
 
-<p>Смотри также: <a href="#Container_Blocks_Index">Распределение
-блоков по индексам</a>.</p>
+<p>РЎРјРѕС‚СЂРё С‚Р°РєР¶Рµ: <a href="#Container_Blocks_Index">Р Р°СЃРїСЂРµРґРµР»РµРЅРёРµ
+Р±Р»РѕРєРѕРІ РїРѕ РёРЅРґРµРєСЃР°Рј</a>.</p>
 
-<h3>1.3. Обязательный заголовок блоков</h3>
+<h3>1.3. РћР±СЏР·Р°С‚РµР»СЊРЅС‹Р№ Р·Р°РіРѕР»РѕРІРѕРє Р±Р»РѕРєРѕРІ</h3>
 
 <table>
   <tr>
-    <th>позиция </th>
-    <th>Размер</th>
-    <th>Имя </th>
-    <th>Описание </th>
+    <th>РїРѕР·РёС†РёСЏ </th>
+    <th>Р Р°Р·РјРµСЂ</th>
+    <th>РРјСЏ </th>
+    <th>РћРїРёСЃР°РЅРёРµ </th>
   </tr>
   <tr>
     <td class="RefAdres">00h</td>
     <td>2(word)</td>
     <td><strong>len_bloc</strong></td>
-    <td>размер блока ( свой размер )</td>
+    <td>СЂР°Р·РјРµСЂ Р±Р»РѕРєР° ( СЃРІРѕР№ СЂР°Р·РјРµСЂ )</td>
   </tr>
   <tr>
     <td class="RefAdres">02h</td>
     <td>2(word)</td>
     <td><strong>len_bloc_max</strong></td>
-    <td>максимальный размер блока</td>
+    <td>РјР°РєСЃРёРјР°Р»СЊРЅС‹Р№ СЂР°Р·РјРµСЂ Р±Р»РѕРєР°</td>
   </tr>
   <tr>
     <td class="RefAdres">04h</td>
-    <td COLSPAN="3" ALIGN="center">Тело блока</td>
+    <td COLSPAN="3" ALIGN="center">РўРµР»Рѕ Р±Р»РѕРєР°</td>
   </tr>
 </table>
 
-<h3>1.4. Работа с файлом</h3>
+<h3>1.4. Р Р°Р±РѕС‚Р° СЃ С„Р°Р№Р»РѕРј</h3>
 
-<p>При работе с файлом программа или читает тело
-блока или записывает его. При этом знание о
-внутренней структуре блока целиком возлагаются
-на программиста. Автоматизируется только
-процесс размещения блока в файле.</p>
+<p>РџСЂРё СЂР°Р±РѕС‚Рµ СЃ С„Р°Р№Р»РѕРј РїСЂРѕРіСЂР°РјРјР° РёР»Рё С‡РёС‚Р°РµС‚ С‚РµР»Рѕ
+Р±Р»РѕРєР° РёР»Рё Р·Р°РїРёСЃС‹РІР°РµС‚ РµРіРѕ. РџСЂРё СЌС‚РѕРј Р·РЅР°РЅРёРµ Рѕ
+РІРЅСѓС‚СЂРµРЅРЅРµР№ СЃС‚СЂСѓРєС‚СѓСЂРµ Р±Р»РѕРєР° С†РµР»РёРєРѕРј РІРѕР·Р»Р°РіР°СЋС‚СЃСЏ
+РЅР° РїСЂРѕРіСЂР°РјРјРёСЃС‚Р°. РђРІС‚РѕРјР°С‚РёР·РёСЂСѓРµС‚СЃСЏ С‚РѕР»СЊРєРѕ
+РїСЂРѕС†РµСЃСЃ СЂР°Р·РјРµС‰РµРЅРёСЏ Р±Р»РѕРєР° РІ С„Р°Р№Р»Рµ.</p>
 
-<p class="Remark">Чтение блока:</p>
+<p class="Remark">Р§С‚РµРЅРёРµ Р±Р»РѕРєР°:</p>
 
-<p class="Notice">При чтении блока - ничего интересного
-не происходит. Программа читает индекс (адрес
-блока в файле) и по этому адресу читает тело
-блока, затем происходит его разбор.</p>
+<p class="Notice">РџСЂРё С‡С‚РµРЅРёРё Р±Р»РѕРєР° - РЅРёС‡РµРіРѕ РёРЅС‚РµСЂРµСЃРЅРѕРіРѕ
+РЅРµ РїСЂРѕРёСЃС…РѕРґРёС‚. РџСЂРѕРіСЂР°РјРјР° С‡РёС‚Р°РµС‚ РёРЅРґРµРєСЃ (Р°РґСЂРµСЃ
+Р±Р»РѕРєР° РІ С„Р°Р№Р»Рµ) Рё РїРѕ СЌС‚РѕРјСѓ Р°РґСЂРµСЃСѓ С‡РёС‚Р°РµС‚ С‚РµР»Рѕ
+Р±Р»РѕРєР°, Р·Р°С‚РµРј РїСЂРѕРёСЃС…РѕРґРёС‚ РµРіРѕ СЂР°Р·Р±РѕСЂ.</p>
 
-<p class="Remark">Запись блока:</p>
+<p class="Remark">Р—Р°РїРёСЃСЊ Р±Р»РѕРєР°:</p>
 
-<p class="Notice">При записи блока - программа сначала
-упаковывает данные в единый блок, получается <span
-class="Refer">тело блока</span> и вычисляется <strong>размер</strong>
-блока. Затем программа получает адрес блока в
-индексах и читает <span class="Refer">обязательный
-заголовок</span>. </p>
-
-<p class="Notice">&nbsp;</p>
-
-<p class="Notice">Если <span class="Refer">максимальный размер
-блока</span> <strong><u>больше</u></strong>, чем размер
-записываемого блока или блок является последним
-(для этого контролируется <span class="Refer">Адрес
-последнего блока</span>), то <span class="Refer">блок </span>записывается
-на место старого&nbsp; блока. В случае если блок
-последний, то изменяется и <span class="Refer">максимальный
-размер блока.</span> При этом изменяются значения:</p>
-
-<p class="Notice"><span class="Refer">размер блока</span>;</p>
-
-<p class="Notice"><span class="Refer">максимальный размер блока </span>(если
-блок последний);</p>
-
-<p class="Notice"><span class="Refer">Заголовок.Размер файла
-конфигурации </span>(если блок последний);</p>
+<p class="Notice">РџСЂРё Р·Р°РїРёСЃРё Р±Р»РѕРєР° - РїСЂРѕРіСЂР°РјРјР° СЃРЅР°С‡Р°Р»Р°
+СѓРїР°РєРѕРІС‹РІР°РµС‚ РґР°РЅРЅС‹Рµ РІ РµРґРёРЅС‹Р№ Р±Р»РѕРє, РїРѕР»СѓС‡Р°РµС‚СЃСЏ <span
+class="Refer">С‚РµР»Рѕ Р±Р»РѕРєР°</span> Рё РІС‹С‡РёСЃР»СЏРµС‚СЃСЏ <strong>СЂР°Р·РјРµСЂ</strong>
+Р±Р»РѕРєР°. Р—Р°С‚РµРј РїСЂРѕРіСЂР°РјРјР° РїРѕР»СѓС‡Р°РµС‚ Р°РґСЂРµСЃ Р±Р»РѕРєР° РІ
+РёРЅРґРµРєСЃР°С… Рё С‡РёС‚Р°РµС‚ <span class="Refer">РѕР±СЏР·Р°С‚РµР»СЊРЅС‹Р№
+Р·Р°РіРѕР»РѕРІРѕРє</span>. </p>
 
 <p class="Notice">&nbsp;</p>
 
-<p class="Notice">Если <span class="Refer">максимальный размер
-блока</span> <strong><u>меньше</u></strong>, но блок не
-является последним или блок ещё не был записан,
-то программа записывает блок в конец файла. При
-этом изменяются значения:</p>
+<p class="Notice">Р•СЃР»Рё <span class="Refer">РјР°РєСЃРёРјР°Р»СЊРЅС‹Р№ СЂР°Р·РјРµСЂ
+Р±Р»РѕРєР°</span> <strong><u>Р±РѕР»СЊС€Рµ</u></strong>, С‡РµРј СЂР°Р·РјРµСЂ
+Р·Р°РїРёСЃС‹РІР°РµРјРѕРіРѕ Р±Р»РѕРєР° РёР»Рё Р±Р»РѕРє СЏРІР»СЏРµС‚СЃСЏ РїРѕСЃР»РµРґРЅРёРј
+(РґР»СЏ СЌС‚РѕРіРѕ РєРѕРЅС‚СЂРѕР»РёСЂСѓРµС‚СЃСЏ <span class="Refer">РђРґСЂРµСЃ
+РїРѕСЃР»РµРґРЅРµРіРѕ Р±Р»РѕРєР°</span>), С‚Рѕ <span class="Refer">Р±Р»РѕРє </span>Р·Р°РїРёСЃС‹РІР°РµС‚СЃСЏ
+РЅР° РјРµСЃС‚Рѕ СЃС‚Р°СЂРѕРіРѕ&nbsp; Р±Р»РѕРєР°. Р’ СЃР»СѓС‡Р°Рµ РµСЃР»Рё Р±Р»РѕРє
+РїРѕСЃР»РµРґРЅРёР№, С‚Рѕ РёР·РјРµРЅСЏРµС‚СЃСЏ Рё <span class="Refer">РјР°РєСЃРёРјР°Р»СЊРЅС‹Р№
+СЂР°Р·РјРµСЂ Р±Р»РѕРєР°.</span> РџСЂРё СЌС‚РѕРј РёР·РјРµРЅСЏСЋС‚СЃСЏ Р·РЅР°С‡РµРЅРёСЏ:</p>
 
-<p class="Notice"><span class="Refer">В индексах - адрес блока</span>;</p>
+<p class="Notice"><span class="Refer">СЂР°Р·РјРµСЂ Р±Р»РѕРєР°</span>;</p>
 
-<p class="Notice"><span class="Refer">Блок.размер блока</span>;</p>
+<p class="Notice"><span class="Refer">РјР°РєСЃРёРјР°Р»СЊРЅС‹Р№ СЂР°Р·РјРµСЂ Р±Р»РѕРєР° </span>(РµСЃР»Рё
+Р±Р»РѕРє РїРѕСЃР»РµРґРЅРёР№);</p>
 
-<p class="Notice"><span class="Refer">Блок.максимальный размер
-блока </span>(если блок последний);</p>
+<p class="Notice"><span class="Refer">Р—Р°РіРѕР»РѕРІРѕРє.Р Р°Р·РјРµСЂ С„Р°Р№Р»Р°
+РєРѕРЅС„РёРіСѓСЂР°С†РёРё </span>(РµСЃР»Рё Р±Р»РѕРє РїРѕСЃР»РµРґРЅРёР№);</p>
 
-<p class="Notice"><span class="Refer">Заголовок.Адрес последнего
-блока</span>;</p>
+<p class="Notice">&nbsp;</p>
 
-<p class="Notice"><span class="Refer">Заголовок.Размер файла
-конфигурации</span>;</p>
+<p class="Notice">Р•СЃР»Рё <span class="Refer">РјР°РєСЃРёРјР°Р»СЊРЅС‹Р№ СЂР°Р·РјРµСЂ
+Р±Р»РѕРєР°</span> <strong><u>РјРµРЅСЊС€Рµ</u></strong>, РЅРѕ Р±Р»РѕРє РЅРµ
+СЏРІР»СЏРµС‚СЃСЏ РїРѕСЃР»РµРґРЅРёРј РёР»Рё Р±Р»РѕРє РµС‰С‘ РЅРµ Р±С‹Р» Р·Р°РїРёСЃР°РЅ,
+С‚Рѕ РїСЂРѕРіСЂР°РјРјР° Р·Р°РїРёСЃС‹РІР°РµС‚ Р±Р»РѕРє РІ РєРѕРЅРµС† С„Р°Р№Р»Р°. РџСЂРё
+СЌС‚РѕРј РёР·РјРµРЅСЏСЋС‚СЃСЏ Р·РЅР°С‡РµРЅРёСЏ:</p>
+
+<p class="Notice"><span class="Refer">Р’ РёРЅРґРµРєСЃР°С… - Р°РґСЂРµСЃ Р±Р»РѕРєР°</span>;</p>
+
+<p class="Notice"><span class="Refer">Р‘Р»РѕРє.СЂР°Р·РјРµСЂ Р±Р»РѕРєР°</span>;</p>
+
+<p class="Notice"><span class="Refer">Р‘Р»РѕРє.РјР°РєСЃРёРјР°Р»СЊРЅС‹Р№ СЂР°Р·РјРµСЂ
+Р±Р»РѕРєР° </span>(РµСЃР»Рё Р±Р»РѕРє РїРѕСЃР»РµРґРЅРёР№);</p>
+
+<p class="Notice"><span class="Refer">Р—Р°РіРѕР»РѕРІРѕРє.РђРґСЂРµСЃ РїРѕСЃР»РµРґРЅРµРіРѕ
+Р±Р»РѕРєР°</span>;</p>
+
+<p class="Notice"><span class="Refer">Р—Р°РіРѕР»РѕРІРѕРє.Р Р°Р·РјРµСЂ С„Р°Р№Р»Р°
+РєРѕРЅС„РёРіСѓСЂР°С†РёРё</span>;</p>
 
 <p>&nbsp;</p>
 
-<h2><a name="Container_Blocks">3. Блоки</a></h2>
+<h2><a name="Container_Blocks">3. Р‘Р»РѕРєРё</a></h2>
 
-<p>Блоки располагаются в области от адреса <span
-class="RefAdres">800h</span> до конца файла. Номер индекса
-строго привязан к тематике конкретного блока для
-данного <strong>типа файла</strong>. </p>
+<p>Р‘Р»РѕРєРё СЂР°СЃРїРѕР»Р°РіР°СЋС‚СЃСЏ РІ РѕР±Р»Р°СЃС‚Рё РѕС‚ Р°РґСЂРµСЃР° <span
+class="RefAdres">800h</span> РґРѕ РєРѕРЅС†Р° С„Р°Р№Р»Р°. РќРѕРјРµСЂ РёРЅРґРµРєСЃР°
+СЃС‚СЂРѕРіРѕ РїСЂРёРІСЏР·Р°РЅ Рє С‚РµРјР°С‚РёРєРµ РєРѕРЅРєСЂРµС‚РЅРѕРіРѕ Р±Р»РѕРєР° РґР»СЏ
+РґР°РЅРЅРѕРіРѕ <strong>С‚РёРїР° С„Р°Р№Р»Р°</strong>. </p>
 
-<p class="Remark"><a name="Container_Blocks_Index">Распределение блоков
-по индексам</a></p>
+<p class="Remark"><a name="Container_Blocks_Index">Р Р°СЃРїСЂРµРґРµР»РµРЅРёРµ Р±Р»РѕРєРѕРІ
+РїРѕ РёРЅРґРµРєСЃР°Рј</a></p>
 
 <table>
   <tr>
-    <th>Индекс</th>
-    <th>Позиция</th>
-    <th>Размер</th>
-    <th>Описание </th>
+    <th>РРЅРґРµРєСЃ</th>
+    <th>РџРѕР·РёС†РёСЏ</th>
+    <th>Р Р°Р·РјРµСЂ</th>
+    <th>РћРїРёСЃР°РЅРёРµ </th>
   </tr>
   <tr>
     <td class="RefAdres">0</td>
     <td class="RefAdres">20h</td>
     <td>40(long[10])</td>
-    <td><a href="#Container_Block_LayerMenu">Блоки тематического меню уровня [1-9]</a></td>
+    <td><a href="#Container_Block_LayerMenu">Р‘Р»РѕРєРё С‚РµРјР°С‚РёС‡РµСЃРєРѕРіРѕ РјРµРЅСЋ СѓСЂРѕРІРЅСЏ [1-9]</a></td>
   </tr>
   <tr>
     <td class="RefAdres">10</td>
     <td class="RefAdres">48h</td>
     <td>4(long)</td>
-    <td><a href="#Container_Block_AreaSet">Блок плоскостных объектов карты</a></td>
+    <td><a href="#Container_Block_AreaSet">Р‘Р»РѕРє РїР»РѕСЃРєРѕСЃС‚РЅС‹С… РѕР±СЉРµРєС‚РѕРІ РєР°СЂС‚С‹</a></td>
   </tr>
   <tr>
     <td class="RefAdres">11</td>
     <td class="RefAdres">4Ch</td>
     <td>4(long)</td>
-    <td><a href="#Container_Block_AreaStroke">Блок штриховых примитивов для плоскости</a></td>
+    <td><a href="#Container_Block_AreaStroke">Р‘Р»РѕРє С€С‚СЂРёС…РѕРІС‹С… РїСЂРёРјРёС‚РёРІРѕРІ РґР»СЏ РїР»РѕСЃРєРѕСЃС‚Рё</a></td>
   </tr>
   <tr>
     <td class="RefAdres">12</td>
     <td class="RefAdres">50h</td>
     <td>4(long)</td>
-    <td><a href="#Container_Block_LineSet">Блок линейных объектов карты</a></td>
+    <td><a href="#Container_Block_LineSet">Р‘Р»РѕРє Р»РёРЅРµР№РЅС‹С… РѕР±СЉРµРєС‚РѕРІ РєР°СЂС‚С‹</a></td>
   </tr>
   <tr>
     <td class="RefAdres">13</td>
     <td class="RefAdres">54h</td>
     <td>4(long)</td>
-    <td><a href="#Container_Block_LineStroke">Блок штриховых примитивов для линии *</a></td>
+    <td><a href="#Container_Block_LineStroke">Р‘Р»РѕРє С€С‚СЂРёС…РѕРІС‹С… РїСЂРёРјРёС‚РёРІРѕРІ РґР»СЏ Р»РёРЅРёРё *</a></td>
   </tr>
   <tr>
     <td class="RefAdres">14</td>
     <td class="RefAdres">58h</td>
     <td>4(long)</td>
-    <td><a href="#Container_Block_PointSet">Блок точечных объектов карты</a></td>
+    <td><a href="#Container_Block_PointSet">Р‘Р»РѕРє С‚РѕС‡РµС‡РЅС‹С… РѕР±СЉРµРєС‚РѕРІ РєР°СЂС‚С‹</a></td>
   </tr>
   <tr>
     <td class="RefAdres">15</td>
     <td class="RefAdres">5Ch</td>
     <td>4(long)</td>
-    <td><a href="#Container_Block_PointStroke">Блок штриховых примитивов для точки</a></td>
+    <td><a href="#Container_Block_PointStroke">Р‘Р»РѕРє С€С‚СЂРёС…РѕРІС‹С… РїСЂРёРјРёС‚РёРІРѕРІ РґР»СЏ С‚РѕС‡РєРё</a></td>
   </tr>
   <tr>
     <td class="RefAdres">16</td>
     <td class="RefAdres">60h</td>
     <td>4(long)</td>
-    <td><a href="#Container_Block_Passwords">Блок настройки паролей</a></td>
+    <td><a href="#Container_Block_Passwords">Р‘Р»РѕРє РЅР°СЃС‚СЂРѕР№РєРё РїР°СЂРѕР»РµР№</a></td>
   </tr>
   <tr>
     <td class="RefAdres">17</td>
     <td class="RefAdres">64h</td>
     <td>4(long)</td>
-    <td><a href="#Container_Block_Paths">Блок путей к графической базе</a></td>
+    <td><a href="#Container_Block_Paths">Р‘Р»РѕРє РїСѓС‚РµР№ Рє РіСЂР°С„РёС‡РµСЃРєРѕР№ Р±Р°Р·Рµ</a></td>
   </tr>
   <tr>
     <td class="RefAdres">18</td>
     <td class="RefAdres">68h</td>
     <td>4(long)</td>
-    <td><a href="#Container_Block_Autor">Блок описания создателя графической базы</a></td>
+    <td><a href="#Container_Block_Autor">Р‘Р»РѕРє РѕРїРёСЃР°РЅРёСЏ СЃРѕР·РґР°С‚РµР»СЏ РіСЂР°С„РёС‡РµСЃРєРѕР№ Р±Р°Р·С‹</a></td>
   </tr>
   <tr>
     <td class="RefAdres">19</td>
     <td class="RefAdres">6Ch</td>
     <td>4(long)</td>
-    <td><a href="#Container_Block_CoordinateSystem">Блок номенклатуры местной системы координат</a></td>
+    <td><a href="#Container_Block_CoordinateSystem">Р‘Р»РѕРє РЅРѕРјРµРЅРєР»Р°С‚СѓСЂС‹ РјРµСЃС‚РЅРѕР№ СЃРёСЃС‚РµРјС‹ РєРѕРѕСЂРґРёРЅР°С‚</a></td>
   </tr>
   <tr>
     <td class="RefAdres">1016</td>
     <td class="RefAdres">400h</td>
     <td>1024(long[256])</td>
-    <td><a href="#Container_Block_DataBase">Блоки настройки семантической базы</a></td>
+    <td><a href="#Container_Block_DataBase">Р‘Р»РѕРєРё РЅР°СЃС‚СЂРѕР№РєРё СЃРµРјР°РЅС‚РёС‡РµСЃРєРѕР№ Р±Р°Р·С‹</a></td>
   </tr>
 </table>
 
-<h3><a name="Container_Block_LayerMenu">3.2 Блоки тематического меню уровня [1-9]</a></h3>
-<p>Сначала предполагалось, что каждый блок будет содержать настройку для показа конкретного уровня (с 1 по 9).
-Однако, в процессе работы было решено оставить один, общий блок для всех уровней.</p>
+<h3><a name="Container_Block_LayerMenu">3.2 Р‘Р»РѕРєРё С‚РµРјР°С‚РёС‡РµСЃРєРѕРіРѕ РјРµРЅСЋ СѓСЂРѕРІРЅСЏ [1-9]</a></h3>
+<p>РЎРЅР°С‡Р°Р»Р° РїСЂРµРґРїРѕР»Р°РіР°Р»РѕСЃСЊ, С‡С‚Рѕ РєР°Р¶РґС‹Р№ Р±Р»РѕРє Р±СѓРґРµС‚ СЃРѕРґРµСЂР¶Р°С‚СЊ РЅР°СЃС‚СЂРѕР№РєСѓ РґР»СЏ РїРѕРєР°Р·Р° РєРѕРЅРєСЂРµС‚РЅРѕРіРѕ СѓСЂРѕРІРЅСЏ (СЃ 1 РїРѕ 9).
+РћРґРЅР°РєРѕ, РІ РїСЂРѕС†РµСЃСЃРµ СЂР°Р±РѕС‚С‹ Р±С‹Р»Рѕ СЂРµС€РµРЅРѕ РѕСЃС‚Р°РІРёС‚СЊ РѕРґРёРЅ, РѕР±С‰РёР№ Р±Р»РѕРє РґР»СЏ РІСЃРµС… СѓСЂРѕРІРЅРµР№.</p>
 
   <table>
-    <caption><p class="Remark">Структура блока тематического меню уровня</p></caption>
-    <tr><th colspan="2">позиция</th><th>Размер</th><th>Имя</th><th>Описание</th></tr>
+    <caption><p class="Remark">РЎС‚СЂСѓРєС‚СѓСЂР° Р±Р»РѕРєР° С‚РµРјР°С‚РёС‡РµСЃРєРѕРіРѕ РјРµРЅСЋ СѓСЂРѕРІРЅСЏ</p></caption>
+    <tr><th colspan="2">РїРѕР·РёС†РёСЏ</th><th>Р Р°Р·РјРµСЂ</th><th>РРјСЏ</th><th>РћРїРёСЃР°РЅРёРµ</th></tr>
     <tr><td class="RefAdres">4</td><td class="RefAdres">4h</td><td>2(int)</td>
-      <td class="Refer">Num_all</td><td>общее число объектов в меню уровня.</td></tr>
+      <td class="Refer">Num_all</td><td>РѕР±С‰РµРµ С‡РёСЃР»Рѕ РѕР±СЉРµРєС‚РѕРІ РІ РјРµРЅСЋ СѓСЂРѕРІРЅСЏ.</td></tr>
     <tr><td class="RefAdres">6</td><td class="RefAdres">6h</td><td>2(int)</td>
-      <td class="Refer">Num_main</td><td>число главных тем или слоёв</td></tr>
-    <tr><td colspan="5"><p class="Remark">распределение для одной строки-меню</p></td></tr>
+      <td class="Refer">Num_main</td><td>С‡РёСЃР»Рѕ РіР»Р°РІРЅС‹С… С‚РµРј РёР»Рё СЃР»РѕС‘РІ</td></tr>
+    <tr><td colspan="5"><p class="Remark">СЂР°СЃРїСЂРµРґРµР»РµРЅРёРµ РґР»СЏ РѕРґРЅРѕР№ СЃС‚СЂРѕРєРё-РјРµРЅСЋ</p></td></tr>
     <tr><td class="RefAdres">0</td><td class="RefAdres">0h</td><td>4(long)</td>
-      <td class="Refer">num_func</td><td>код, который содержит описание графического объекта</td></tr>
+      <td class="Refer">num_func</td><td>РєРѕРґ, РєРѕС‚РѕСЂС‹Р№ СЃРѕРґРµСЂР¶РёС‚ РѕРїРёСЃР°РЅРёРµ РіСЂР°С„РёС‡РµСЃРєРѕРіРѕ РѕР±СЉРµРєС‚Р°</td></tr>
     <tr><td class="RefAdres">4</td><td class="RefAdres">4h</td><td>1(char)</td>
-      <td class="Refer">men</td><td>0 - главное; [1-255] подменю</td></tr>
+      <td class="Refer">men</td><td>0 - РіР»Р°РІРЅРѕРµ; [1-255] РїРѕРґРјРµРЅСЋ</td></tr>
     <tr><td class="RefAdres">5</td><td class="RefAdres">5h</td><td>1(char)</td>
-      <td class="Refer">wyd</td><td>выделенная буква</td></tr>
+      <td class="Refer">wyd</td><td>РІС‹РґРµР»РµРЅРЅР°СЏ Р±СѓРєРІР°</td></tr>
     <tr><td class="RefAdres">6</td><td class="RefAdres">6h</td><td>2(int)</td>
-      <td class="Refer">klass</td><td>код в классификаторе</td></tr>
+      <td class="Refer">klass</td><td>РєРѕРґ РІ РєР»Р°СЃСЃРёС„РёРєР°С‚РѕСЂРµ</td></tr>
     <tr><td class="RefAdres">8</td><td class="RefAdres">8h</td><td>24(char[24])</td>
-      <td class="Refer">Str</td><td>строка меню</td></tr>
+      <td class="Refer">Str</td><td>СЃС‚СЂРѕРєР° РјРµРЅСЋ</td></tr>
     <tr><td class="RefAdres">32</td><td class="RefAdres">20h</td><td colspan="4">&nbsp;</td></tr>
   </table>
 <hr/>
-<p class="Remark">Структура меню / подменю:</p>
-<p class="Notice">Меню в GEO (DOS приложение) в общем случае состоит из верхнего меню (меню заголовков или слоёв)
-  и подменю, в который входят элементы описания конкретных графических объектов.</p>
-<p class="Notice">Значение <span class="Refer">Num_main</span> определяет количество заголовков.
-  Если <span class="Refer">men</span> для данного элемента меню равно 0, значит это заголовок, иначе это описание
-  графического объекта. Все элементы меню с описанием графических объектов, находящиеся между двумя заголовками,
-  входят в подменю для первого заголовка.</p>
-<p class="Notice"> В GEO при выборе заголовка, подменю обновлялось.</p>
-<p class="Remark">Расшифровка кода описания графического объекта:</p>
-<p class="Notice">Значение <span class="Refer">num_func</span> содержит описание графического объекта. Расшифровка его
-  представлена ниже, в виде программы С++</p>
+<p class="Remark">РЎС‚СЂСѓРєС‚СѓСЂР° РјРµРЅСЋ / РїРѕРґРјРµРЅСЋ:</p>
+<p class="Notice">РњРµРЅСЋ РІ GEO (DOS РїСЂРёР»РѕР¶РµРЅРёРµ) РІ РѕР±С‰РµРј СЃР»СѓС‡Р°Рµ СЃРѕСЃС‚РѕРёС‚ РёР· РІРµСЂС…РЅРµРіРѕ РјРµРЅСЋ (РјРµРЅСЋ Р·Р°РіРѕР»РѕРІРєРѕРІ РёР»Рё СЃР»РѕС‘РІ)
+  Рё РїРѕРґРјРµРЅСЋ, РІ РєРѕС‚РѕСЂС‹Р№ РІС…РѕРґСЏС‚ СЌР»РµРјРµРЅС‚С‹ РѕРїРёСЃР°РЅРёСЏ РєРѕРЅРєСЂРµС‚РЅС‹С… РіСЂР°С„РёС‡РµСЃРєРёС… РѕР±СЉРµРєС‚РѕРІ.</p>
+<p class="Notice">Р—РЅР°С‡РµРЅРёРµ <span class="Refer">Num_main</span> РѕРїСЂРµРґРµР»СЏРµС‚ РєРѕР»РёС‡РµСЃС‚РІРѕ Р·Р°РіРѕР»РѕРІРєРѕРІ.
+  Р•СЃР»Рё <span class="Refer">men</span> РґР»СЏ РґР°РЅРЅРѕРіРѕ СЌР»РµРјРµРЅС‚Р° РјРµРЅСЋ СЂР°РІРЅРѕ 0, Р·РЅР°С‡РёС‚ СЌС‚Рѕ Р·Р°РіРѕР»РѕРІРѕРє, РёРЅР°С‡Рµ СЌС‚Рѕ РѕРїРёСЃР°РЅРёРµ
+  РіСЂР°С„РёС‡РµСЃРєРѕРіРѕ РѕР±СЉРµРєС‚Р°. Р’СЃРµ СЌР»РµРјРµРЅС‚С‹ РјРµРЅСЋ СЃ РѕРїРёСЃР°РЅРёРµРј РіСЂР°С„РёС‡РµСЃРєРёС… РѕР±СЉРµРєС‚РѕРІ, РЅР°С…РѕРґСЏС‰РёРµСЃСЏ РјРµР¶РґСѓ РґРІСѓРјСЏ Р·Р°РіРѕР»РѕРІРєР°РјРё,
+  РІС…РѕРґСЏС‚ РІ РїРѕРґРјРµРЅСЋ РґР»СЏ РїРµСЂРІРѕРіРѕ Р·Р°РіРѕР»РѕРІРєР°.</p>
+<p class="Notice"> Р’ GEO РїСЂРё РІС‹Р±РѕСЂРµ Р·Р°РіРѕР»РѕРІРєР°, РїРѕРґРјРµРЅСЋ РѕР±РЅРѕРІР»СЏР»РѕСЃСЊ.</p>
+<p class="Remark">Р Р°СЃС€РёС„СЂРѕРІРєР° РєРѕРґР° РѕРїРёСЃР°РЅРёСЏ РіСЂР°С„РёС‡РµСЃРєРѕРіРѕ РѕР±СЉРµРєС‚Р°:</p>
+<p class="Notice">Р—РЅР°С‡РµРЅРёРµ <span class="Refer">num_func</span> СЃРѕРґРµСЂР¶РёС‚ РѕРїРёСЃР°РЅРёРµ РіСЂР°С„РёС‡РµСЃРєРѕРіРѕ РѕР±СЉРµРєС‚Р°. Р Р°СЃС€РёС„СЂРѕРІРєР° РµРіРѕ
+  РїСЂРµРґСЃС‚Р°РІР»РµРЅР° РЅРёР¶Рµ, РІ РІРёРґРµ РїСЂРѕРіСЂР°РјРјС‹ РЎ++</p>
 <pre class="Prog">
-<span class="Refer">chif</span> = (UINT)( num_func & 0x00000FFl       ); <span class="ProgComment">// номер типа обьекта (т.е., например, 5 точка)</span>
-<span class="Refer">bfil</span> = (UINT)((num_func & 0x000FF00l) >> 8 ); <span class="ProgComment">// номер семантической базы</span>
-<span class="Refer">gfil</span> = (UINT)((num_func & 0x0FF0000l) >> 16); <span class="ProgComment">// номер тематического слоя</span>
-<span class="Refer">vid</span>  = (UINT)((num_func & 0xF000000l) >> 24); <span class="ProgComment">// тип обьекта (плоскость, линия, точка)</span></pre>
+<span class="Refer">chif</span> = (UINT)( num_func & 0x00000FFl       ); <span class="ProgComment">// РЅРѕРјРµСЂ С‚РёРїР° РѕР±СЊРµРєС‚Р° (С‚.Рµ., РЅР°РїСЂРёРјРµСЂ, 5 С‚РѕС‡РєР°)</span>
+<span class="Refer">bfil</span> = (UINT)((num_func & 0x000FF00l) >> 8 ); <span class="ProgComment">// РЅРѕРјРµСЂ СЃРµРјР°РЅС‚РёС‡РµСЃРєРѕР№ Р±Р°Р·С‹</span>
+<span class="Refer">gfil</span> = (UINT)((num_func & 0x0FF0000l) >> 16); <span class="ProgComment">// РЅРѕРјРµСЂ С‚РµРјР°С‚РёС‡РµСЃРєРѕРіРѕ СЃР»РѕСЏ</span>
+<span class="Refer">vid</span>  = (UINT)((num_func & 0xF000000l) >> 24); <span class="ProgComment">// С‚РёРї РѕР±СЊРµРєС‚Р° (РїР»РѕСЃРєРѕСЃС‚СЊ, Р»РёРЅРёСЏ, С‚РѕС‡РєР°)</span></pre>
 
-<h3><a name="Container_Block_AreaSet">3.3 Блок плоскостных объектов карты </a></h3>
+<h3><a name="Container_Block_AreaSet">3.3 Р‘Р»РѕРє РїР»РѕСЃРєРѕСЃС‚РЅС‹С… РѕР±СЉРµРєС‚РѕРІ РєР°СЂС‚С‹ </a></h3>
   <table>
-    <caption><p class="Remark">Структура блока плоскостных объектов карты</p></caption>
-    <tr><th colspan="2">позиция</th><th>Размер</th><th>Имя</th><th>Описание</th></tr>
+    <caption><p class="Remark">РЎС‚СЂСѓРєС‚СѓСЂР° Р±Р»РѕРєР° РїР»РѕСЃРєРѕСЃС‚РЅС‹С… РѕР±СЉРµРєС‚РѕРІ РєР°СЂС‚С‹</p></caption>
+    <tr><th colspan="2">РїРѕР·РёС†РёСЏ</th><th>Р Р°Р·РјРµСЂ</th><th>РРјСЏ</th><th>РћРїРёСЃР°РЅРёРµ</th></tr>
     <tr><td class="RefAdres">4</td><td class="RefAdres">4h</td><td>2(int)</td>
-      <td class="Refer">Num_all</td><td>общее число плоскостных объектов</td></tr>
-    <tr><td colspan="5"><p class="Remark">распределение для одного плоскостного объекта</p></td></tr>
+      <td class="Refer">Num_all</td><td>РѕР±С‰РµРµ С‡РёСЃР»Рѕ РїР»РѕСЃРєРѕСЃС‚РЅС‹С… РѕР±СЉРµРєС‚РѕРІ</td></tr>
+    <tr><td colspan="5"><p class="Remark">СЂР°СЃРїСЂРµРґРµР»РµРЅРёРµ РґР»СЏ РѕРґРЅРѕРіРѕ РїР»РѕСЃРєРѕСЃС‚РЅРѕРіРѕ РѕР±СЉРµРєС‚Р°</p></td></tr>
     <tr><td class="RefAdres">0</td><td class="RefAdres">0h</td><td>4/16(unsigned:4)</td>
-      <td class="Refer">col_lin</td><td>цвет границы области</td></tr>
+      <td class="Refer">col_lin</td><td>С†РІРµС‚ РіСЂР°РЅРёС†С‹ РѕР±Р»Р°СЃС‚Рё</td></tr>
     <tr><td class="RefAdres">0</td><td class="RefAdres">0h</td><td>4/16(unsigned:4)</td>
-      <td class="Refer">col_n</td><td>цвет надписи</td></tr>
+      <td class="Refer">col_n</td><td>С†РІРµС‚ РЅР°РґРїРёСЃРё</td></tr>
     <tr><td class="RefAdres">0</td><td class="RefAdres">0h</td><td>4/16(unsigned:4</td>
-      <td class="Refer">col_fil</td><td>цвет закрашиваемой плоскости</td></tr>
+      <td class="Refer">col_fil</td><td>С†РІРµС‚ Р·Р°РєСЂР°С€РёРІР°РµРјРѕР№ РїР»РѕСЃРєРѕСЃС‚Рё</td></tr>
     <tr><td class="RefAdres">0</td><td class="RefAdres">0h</td><td>4/16(unsigned:4)</td>
-      <td class="Refer">col_nf</td><td>цвет фона надписи</td></tr>
+      <td class="Refer">col_nf</td><td>С†РІРµС‚ С„РѕРЅР° РЅР°РґРїРёСЃРё</td></tr>
     <tr><td class="RefAdres">2</td><td class="RefAdres">2h</td><td>8(char[8])</td>
-      <td class="Refer">pattern</td><td>рисунок закраски (pattern 8 X 8 bit )</td></tr>
+      <td class="Refer">pattern</td><td>СЂРёСЃСѓРЅРѕРє Р·Р°РєСЂР°СЃРєРё (pattern 8 X 8 bit )</td></tr>
     <tr><td class="RefAdres">10</td><td class="RefAdres">Ah</td><td>12/16(int:12)</td>
-      <td class="Refer">line</td><td>номер линии для рамки</td></tr>
+      <td class="Refer">line</td><td>РЅРѕРјРµСЂ Р»РёРЅРёРё РґР»СЏ СЂР°РјРєРё</td></tr>
     <tr><td class="RefAdres">10</td><td class="RefAdres">Ah</td><td>1/16(int:1)</td>
-      <td class="Refer">FL_clear_fill</td><td>признак прозрачности полигона</td></tr>
+      <td class="Refer">FL_clear_fill</td><td>РїСЂРёР·РЅР°Рє РїСЂРѕР·СЂР°С‡РЅРѕСЃС‚Рё РїРѕР»РёРіРѕРЅР°</td></tr>
     <tr><td class="RefAdres">10</td><td class="RefAdres">Ah</td><td>1/16(int:1)</td>
-      <td class="Refer">FL_clear_line</td><td>признак прозрачности линии</td></tr>
+      <td class="Refer">FL_clear_line</td><td>РїСЂРёР·РЅР°Рє РїСЂРѕР·СЂР°С‡РЅРѕСЃС‚Рё Р»РёРЅРёРё</td></tr>
     <tr><td class="RefAdres">10</td><td class="RefAdres">Ah</td><td>1/16(int:1)</td>
-      <td class="Refer">FL_nofon_text</td><td>признак пропуска фона надписи</td></tr>
+      <td class="Refer">FL_nofon_text</td><td>РїСЂРёР·РЅР°Рє РїСЂРѕРїСѓСЃРєР° С„РѕРЅР° РЅР°РґРїРёСЃРё</td></tr>
     <tr><td class="RefAdres">10</td><td class="RefAdres">Ah</td><td>1/16(int:1)</td>
-      <td class="Refer">FL_transparnt</td><td>признак полупрозрачности</td></tr>
+      <td class="Refer">FL_transparnt</td><td>РїСЂРёР·РЅР°Рє РїРѕР»СѓРїСЂРѕР·СЂР°С‡РЅРѕСЃС‚Рё</td></tr>
     <tr><td class="RefAdres">12</td><td class="RefAdres">Ch</td><td>2(int)</td>
-      <td class="Refer">drw</td><td>номер штрихового примитива заполнения</td></tr>
+      <td class="Refer">drw</td><td>РЅРѕРјРµСЂ С€С‚СЂРёС…РѕРІРѕРіРѕ РїСЂРёРјРёС‚РёРІР° Р·Р°РїРѕР»РЅРµРЅРёСЏ</td></tr>
     <tr><td class="RefAdres">14</td><td class="RefAdres">Eh</td><td>2(int)</td>
-      <td class="Refer">col_drw</td><td>цвет карандаша примитива</td></tr>
+      <td class="Refer">col_drw</td><td>С†РІРµС‚ РєР°СЂР°РЅРґР°С€Р° РїСЂРёРјРёС‚РёРІР°</td></tr>
     <tr><td class="RefAdres">16</td><td class="RefAdres">10h</td><td colspan="3"></td></tr>
   </table>
 
-<h3><a name="Container_Block_AreaStroke">3.4 Блок штриховых примитивов для плоскости </a></h3>
+<h3><a name="Container_Block_AreaStroke">3.4 Р‘Р»РѕРє С€С‚СЂРёС…РѕРІС‹С… РїСЂРёРјРёС‚РёРІРѕРІ РґР»СЏ РїР»РѕСЃРєРѕСЃС‚Рё </a></h3>
 <table>
-  <caption><p class="Remark">Структура блока штриховых примитивов для плоскости</p></caption>
-  <tr><th colspan="2">позиция</th><th>Размер</th><th>Имя</th><th>Описание</th></tr>
+  <caption><p class="Remark">РЎС‚СЂСѓРєС‚СѓСЂР° Р±Р»РѕРєР° С€С‚СЂРёС…РѕРІС‹С… РїСЂРёРјРёС‚РёРІРѕРІ РґР»СЏ РїР»РѕСЃРєРѕСЃС‚Рё</p></caption>
+  <tr><th colspan="2">РїРѕР·РёС†РёСЏ</th><th>Р Р°Р·РјРµСЂ</th><th>РРјСЏ</th><th>РћРїРёСЃР°РЅРёРµ</th></tr>
   <tr><td class="RefAdres">4</td><td class="RefAdres">4h</td><td>2(int)</td>
-    <td class="Refer">Num_all</td><td>общее число плоскостных объектов</td></tr>
-  <tr><td colspan="5"><p class="Remark">распределение для одного плоскостного объекта</p></td></tr>
+    <td class="Refer">Num_all</td><td>РѕР±С‰РµРµ С‡РёСЃР»Рѕ РїР»РѕСЃРєРѕСЃС‚РЅС‹С… РѕР±СЉРµРєС‚РѕРІ</td></tr>
+  <tr><td colspan="5"><p class="Remark">СЂР°СЃРїСЂРµРґРµР»РµРЅРёРµ РґР»СЏ РѕРґРЅРѕРіРѕ РїР»РѕСЃРєРѕСЃС‚РЅРѕРіРѕ РѕР±СЉРµРєС‚Р°</p></td></tr>
   <tr><td class="RefAdres">0</td><td class="RefAdres">0h</td><td>2(int)</td>
-    <td class="Refer">pat1</td><td>заполнение 1 линии</td></tr>
+    <td class="Refer">pat1</td><td>Р·Р°РїРѕР»РЅРµРЅРёРµ 1 Р»РёРЅРёРё</td></tr>
   <tr><td class="RefAdres">2</td><td class="RefAdres">2h</td><td>2(int)</td>
-    <td class="Refer">pat2</td><td>заполнение 2 линии</td></tr>
+    <td class="Refer">pat2</td><td>Р·Р°РїРѕР»РЅРµРЅРёРµ 2 Р»РёРЅРёРё</td></tr>
   <tr><td class="RefAdres">4</td><td class="RefAdres">4h</td><td>1(char)</td>
-    <td class="Refer">dir1</td><td>направление 1 линии</td></tr>
+    <td class="Refer">dir1</td><td>РЅР°РїСЂР°РІР»РµРЅРёРµ 1 Р»РёРЅРёРё</td></tr>
   <tr><td class="RefAdres">5</td><td class="RefAdres">5h</td><td>1(char)</td>
-    <td class="Refer">dir2</td><td>направление 2 линии</td></tr>
+    <td class="Refer">dir2</td><td>РЅР°РїСЂР°РІР»РµРЅРёРµ 2 Р»РёРЅРёРё</td></tr>
   <tr><td class="RefAdres">6</td><td class="RefAdres">6h</td><td>1(char)</td>
-    <td class="Refer">len1</td><td>шаг линовки 1 линией</td></tr>
+    <td class="Refer">len1</td><td>С€Р°Рі Р»РёРЅРѕРІРєРё 1 Р»РёРЅРёРµР№</td></tr>
   <tr><td class="RefAdres">7</td><td class="RefAdres">7h</td><td>1(char)</td>
-    <td class="Refer">len2</td><td>шаг линовки 2 линией</td></tr>
+    <td class="Refer">len2</td><td>С€Р°Рі Р»РёРЅРѕРІРєРё 2 Р»РёРЅРёРµР№</td></tr>
   <tr><td class="RefAdres">8</td><td class="RefAdres">8h</td><td>1(char)</td>
-    <td class="Refer">cpl1</td><td>номер карандаша плоттера 1 линии</td></tr>
+    <td class="Refer">cpl1</td><td>РЅРѕРјРµСЂ РєР°СЂР°РЅРґР°С€Р° РїР»РѕС‚С‚РµСЂР° 1 Р»РёРЅРёРё</td></tr>
   <tr><td class="RefAdres">9</td><td class="RefAdres">9h</td><td>1(char)</td>
-    <td class="Refer">cpl2</td><td>номер карандаша плоттера 2 линии</td></tr>
+    <td class="Refer">cpl2</td><td>РЅРѕРјРµСЂ РєР°СЂР°РЅРґР°С€Р° РїР»РѕС‚С‚РµСЂР° 2 Р»РёРЅРёРё</td></tr>
   <tr><td class="RefAdres">10</td><td class="RefAdres">Ah</td><td colspan="3"></td></tr>
 </table>
 
-<h3><a name="Container_Block_LineSet">3.5 Блок линейных объектов карты </a></h3>
+<h3><a name="Container_Block_LineSet">3.5 Р‘Р»РѕРє Р»РёРЅРµР№РЅС‹С… РѕР±СЉРµРєС‚РѕРІ РєР°СЂС‚С‹ </a></h3>
   <table>
-    <caption><p class="Remark">Структура блока линейных объектов карты</p></caption>
-    <tr><th colspan="2">Позиция</th><th>Размер</th><th>Имя</th><th>Описание</th></tr>
+    <caption><p class="Remark">РЎС‚СЂСѓРєС‚СѓСЂР° Р±Р»РѕРєР° Р»РёРЅРµР№РЅС‹С… РѕР±СЉРµРєС‚РѕРІ РєР°СЂС‚С‹</p></caption>
+    <tr><th colspan="2">РџРѕР·РёС†РёСЏ</th><th>Р Р°Р·РјРµСЂ</th><th>РРјСЏ</th><th>РћРїРёСЃР°РЅРёРµ</th></tr>
     <tr><td class="RefAdres">4</td><td class="RefAdres">4h</td><td>2(int)</td>
-      <td class="Refer">Num_all</td><td>общее число линейных объектов</td></tr>
-    <tr><td colspan="5"><p class="Remark">структура одного линейного объекта</p></td></tr>
+      <td class="Refer">Num_all</td><td>РѕР±С‰РµРµ С‡РёСЃР»Рѕ Р»РёРЅРµР№РЅС‹С… РѕР±СЉРµРєС‚РѕРІ</td></tr>
+    <tr><td colspan="5"><p class="Remark">СЃС‚СЂСѓРєС‚СѓСЂР° РѕРґРЅРѕРіРѕ Р»РёРЅРµР№РЅРѕРіРѕ РѕР±СЉРµРєС‚Р°</p></td></tr>
     <tr><td class="RefAdres">0</td><td class="RefAdres">0h</td><td>4/16(unsigned:4)</td>
-      <td class="Refer">col1</td><td>цвет 1 линии</td></tr>
+      <td class="Refer">col1</td><td>С†РІРµС‚ 1 Р»РёРЅРёРё</td></tr>
     <tr><td class="RefAdres">0</td><td class="RefAdres">0h</td><td>4/16(unsigned:4)</td>
-      <td class="Refer">col_n</td><td>цвет надписи</td></tr>
+      <td class="Refer">col_n</td><td>С†РІРµС‚ РЅР°РґРїРёСЃРё</td></tr>
     <tr><td class="RefAdres">0</td><td class="RefAdres">0h</td><td>4/16(unsigned:4)</td>
-      <td class="Refer">col2</td><td>цвет 2 линии</td></tr>
+      <td class="Refer">col2</td><td>С†РІРµС‚ 2 Р»РёРЅРёРё</td></tr>
     <tr><td class="RefAdres">0</td><td class="RefAdres">0h</td><td>4/16(unsigned:4)</td>
-      <td class="Refer">col_nf</td><td>цвет фона надписи</td></tr>
+      <td class="Refer">col_nf</td><td>С†РІРµС‚ С„РѕРЅР° РЅР°РґРїРёСЃРё</td></tr>
     <tr><td class="RefAdres">2</td><td class="RefAdres">2h</td><td>2(unsigned)</td>
-      <td class="Refer">pat1</td><td>заполнение 1 линии</td></tr>
+      <td class="Refer">pat1</td><td>Р·Р°РїРѕР»РЅРµРЅРёРµ 1 Р»РёРЅРёРё</td></tr>
     <tr><td class="RefAdres">4</td><td class="RefAdres">4h</td><td>2(unsigned)</td>
-      <td class="Refer">pat2</td><td>заполнение 2 линии</td></tr>
+      <td class="Refer">pat2</td><td>Р·Р°РїРѕР»РЅРµРЅРёРµ 2 Р»РёРЅРёРё</td></tr>
     <tr><td class="RefAdres">6</td><td class="RefAdres">6h</td><td>2/8(char:2)</td>
-      <td class="Refer">thic</td><td>толщина линии</td></tr>
+      <td class="Refer">thic</td><td>С‚РѕР»С‰РёРЅР° Р»РёРЅРёРё</td></tr>
     <tr><td class="RefAdres">...</td><td class="RefAdres">...</td><td>1/8(char:1)</td>
-      <td class="Refer">vid_p</td><td>наличие средней буквы</td></tr>
+      <td class="Refer">vid_p</td><td>РЅР°Р»РёС‡РёРµ СЃСЂРµРґРЅРµР№ Р±СѓРєРІС‹</td></tr>
     <tr><td class="RefAdres">...</td><td class="RefAdres">...</td><td>1/8(char:1)</td>
-      <td class="Refer">alt_p</td><td>если 1, то все высоты одинаковые</td></tr>
+      <td class="Refer">alt_p</td><td>РµСЃР»Рё 1, С‚Рѕ РІСЃРµ РІС‹СЃРѕС‚С‹ РѕРґРёРЅР°РєРѕРІС‹Рµ</td></tr>
     <tr><td class="RefAdres">...</td><td class="RefAdres">...</td><td>4/8(char:4)</td>
-      <td class="Refer">strel</td><td>оформление края (не используется)</td></tr>
+      <td class="Refer">strel</td><td>РѕС„РѕСЂРјР»РµРЅРёРµ РєСЂР°СЏ (РЅРµ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ)</td></tr>
     <tr><td class="RefAdres">7</td><td class="RefAdres">7h</td><td>1(char)</td>
-      <td class="Refer">vid</td><td>буква в центре линии </td></tr>
+      <td class="Refer">vid</td><td>Р±СѓРєРІР° РІ С†РµРЅС‚СЂРµ Р»РёРЅРёРё </td></tr>
     <tr><td class="RefAdres">8</td><td class="RefAdres">8h</td><td>1(char)</td>
-      <td class="Refer">drw_k1</td><td>номер краевой точки слева</td></tr>
+      <td class="Refer">drw_k1</td><td>РЅРѕРјРµСЂ РєСЂР°РµРІРѕР№ С‚РѕС‡РєРё СЃР»РµРІР°</td></tr>
     <tr><td class="RefAdres">9</td><td class="RefAdres">9h</td><td>1(char)</td>
-      <td class="Refer">drw_k2</td><td>номер краевой точки справа</td></tr>
+      <td class="Refer">drw_k2</td><td>РЅРѕРјРµСЂ РєСЂР°РµРІРѕР№ С‚РѕС‡РєРё СЃРїСЂР°РІР°</td></tr>
     <tr><td class="RefAdres">10</td><td class="RefAdres">Ah</td><td>1(char)</td>
-      <td class="Refer">cpl</td><td>номер карандаша плоттера</td></tr>
+      <td class="Refer">cpl</td><td>РЅРѕРјРµСЂ РєР°СЂР°РЅРґР°С€Р° РїР»РѕС‚С‚РµСЂР°</td></tr>
     <tr><td class="RefAdres">10</td><td class="RefAdres">Bh</td><td>1(char)</td>
-      <td class="Refer">drw_c</td><td>номер штрихового примитива</td></tr>
+      <td class="Refer">drw_c</td><td>РЅРѕРјРµСЂ С€С‚СЂРёС…РѕРІРѕРіРѕ РїСЂРёРјРёС‚РёРІР°</td></tr>
     <tr><td class="RefAdres">12</td><td class="RefAdres">Ch</td><td colspan="3">...</td></tr>
   </table>
 
-<h3><a name="Container_Block_LineStroke">3.6 Блок штриховых примитивов для линии *</a></h3>
-<p>Штриховые примитивы для линии задаётсся в настройке линии.</p>
-<p>(см. <a href="#Container_Block_LineSet">3.5 Блок линейных объектов карты </a>).</p>
+<h3><a name="Container_Block_LineStroke">3.6 Р‘Р»РѕРє С€С‚СЂРёС…РѕРІС‹С… РїСЂРёРјРёС‚РёРІРѕРІ РґР»СЏ Р»РёРЅРёРё *</a></h3>
+<p>РЁС‚СЂРёС…РѕРІС‹Рµ РїСЂРёРјРёС‚РёРІС‹ РґР»СЏ Р»РёРЅРёРё Р·Р°РґР°С‘С‚СЃСЃСЏ РІ РЅР°СЃС‚СЂРѕР№РєРµ Р»РёРЅРёРё.</p>
+<p>(СЃРј. <a href="#Container_Block_LineSet">3.5 Р‘Р»РѕРє Р»РёРЅРµР№РЅС‹С… РѕР±СЉРµРєС‚РѕРІ РєР°СЂС‚С‹ </a>).</p>
 
-<h3><a name="Container_Block_PointSet">3.7 Блок точечных объектов карты </a></h3>
+<h3><a name="Container_Block_PointSet">3.7 Р‘Р»РѕРє С‚РѕС‡РµС‡РЅС‹С… РѕР±СЉРµРєС‚РѕРІ РєР°СЂС‚С‹ </a></h3>
 <pre class="Prog">
-  структура блока точечных объектов карты            (*.cfg  0x58)
+  СЃС‚СЂСѓРєС‚СѓСЂР° Р±Р»РѕРєР° С‚РѕС‡РµС‡РЅС‹С… РѕР±СЉРµРєС‚РѕРІ РєР°СЂС‚С‹            (*.cfg  0x58)
 ----------+---+-----------+----------------+-----------------------------+
-| позиция |len|   тип     |     имя        |      Описание               |
+| РїРѕР·РёС†РёСЏ |len|   С‚РёРї     |     РёРјСЏ        |      РћРїРёСЃР°РЅРёРµ               |
 +---------+---+-----------+----------------+-----------------------------+
-|   4|   4| 2 |  int      | Num_all        | число плоскостных объектов  |
-+---------+--- распределение для одной строки-меню ----------------------+
-|   0|   0|4/8|unsigned:4 | col            | цвет маски                  |
-|   0|   0|4/8|unsigned:4 | col_n          | цвет надписи                |
-|   1|   1|4/8|unsigned:4 | col_f          | цвет фона                   |
-|   1|   1|4/8|unsigned:4 | col_nf         | цвет фона надписи           |
-|   2|   2|32 |  pat[32]  | pat            | рисунок закраски маски      |
-|  34|  22|32 |  pat[32]  | pat            | рисунок закраски фона       |
-|  66|  42|4/8|unsigned:4 | ndp            | число отметок высоты        |
-|  66|  42|4/8|unsigned:4 | cpl            | номер карандаша плоттера    |
-|  66|  42| 1 | unsigned  | drw            | номер штрихового примитива  |
+|   4|   4| 2 |  int      | Num_all        | С‡РёСЃР»Рѕ РїР»РѕСЃРєРѕСЃС‚РЅС‹С… РѕР±СЉРµРєС‚РѕРІ  |
++---------+--- СЂР°СЃРїСЂРµРґРµР»РµРЅРёРµ РґР»СЏ РѕРґРЅРѕР№ СЃС‚СЂРѕРєРё-РјРµРЅСЋ ----------------------+
+|   0|   0|4/8|unsigned:4 | col            | С†РІРµС‚ РјР°СЃРєРё                  |
+|   0|   0|4/8|unsigned:4 | col_n          | С†РІРµС‚ РЅР°РґРїРёСЃРё                |
+|   1|   1|4/8|unsigned:4 | col_f          | С†РІРµС‚ С„РѕРЅР°                   |
+|   1|   1|4/8|unsigned:4 | col_nf         | С†РІРµС‚ С„РѕРЅР° РЅР°РґРїРёСЃРё           |
+|   2|   2|32 |  pat[32]  | pat            | СЂРёСЃСѓРЅРѕРє Р·Р°РєСЂР°СЃРєРё РјР°СЃРєРё      |
+|  34|  22|32 |  pat[32]  | pat            | СЂРёСЃСѓРЅРѕРє Р·Р°РєСЂР°СЃРєРё С„РѕРЅР°       |
+|  66|  42|4/8|unsigned:4 | ndp            | С‡РёСЃР»Рѕ РѕС‚РјРµС‚РѕРє РІС‹СЃРѕС‚С‹        |
+|  66|  42|4/8|unsigned:4 | cpl            | РЅРѕРјРµСЂ РєР°СЂР°РЅРґР°С€Р° РїР»РѕС‚С‚РµСЂР°    |
+|  66|  42| 1 | unsigned  | drw            | РЅРѕРјРµСЂ С€С‚СЂРёС…РѕРІРѕРіРѕ РїСЂРёРјРёС‚РёРІР°  |
 |  68|  44|            .  .  .  .  .  .  .  .  .  .                      |
 +---------+--------------------------------------------------------------+
 </pre>
 
-<h3><a name="Container_Block_PointStroke">3.8 Блок штриховых примитивов для точки </a></h3>
+<h3><a name="Container_Block_PointStroke">3.8 Р‘Р»РѕРє С€С‚СЂРёС…РѕРІС‹С… РїСЂРёРјРёС‚РёРІРѕРІ РґР»СЏ С‚РѕС‡РєРё </a></h3>
 <pre class="Prog">
-  структура блока штриховых примитивов       (*.cfg  0x5C)
+  СЃС‚СЂСѓРєС‚СѓСЂР° Р±Р»РѕРєР° С€С‚СЂРёС…РѕРІС‹С… РїСЂРёРјРёС‚РёРІРѕРІ       (*.cfg  0x5C)
 ----------+---+---------+----------------+-------------------------------+
-| позиция |len|   тип   |     имя        |      Описание                 |
+| РїРѕР·РёС†РёСЏ |len|   С‚РёРї   |     РёРјСЏ        |      РћРїРёСЃР°РЅРёРµ                 |
 +---------+---+---------+----------------+-------------------------------+
-|   4|   4| 2 |   int   | Num_all (Nal)  | число примитивов              |
-|   6|   6| 2 |   int   | len_buf (lbf)  | число точек в буфере          |
-|   6|   6|Nal| int[Nal]| N  [Nal]       | Позиция начала примитива      |
-|  +6|  +6|Nbf| int[lbf]| buf[lbf]       | общая куча точек              |
-+---------+--- распределение в общем блоке ------------------------------+
-|    |    | 1 |  char   | x              | смещение по X                 |
-|    |    | 1 |  char   | y              | смещение по Y                 |
+|   4|   4| 2 |   int   | Num_all (Nal)  | С‡РёСЃР»Рѕ РїСЂРёРјРёС‚РёРІРѕРІ              |
+|   6|   6| 2 |   int   | len_buf (lbf)  | С‡РёСЃР»Рѕ С‚РѕС‡РµРє РІ Р±СѓС„РµСЂРµ          |
+|   6|   6|Nal| int[Nal]| N  [Nal]       | РџРѕР·РёС†РёСЏ РЅР°С‡Р°Р»Р° РїСЂРёРјРёС‚РёРІР°      |
+|  +6|  +6|Nbf| int[lbf]| buf[lbf]       | РѕР±С‰Р°СЏ РєСѓС‡Р° С‚РѕС‡РµРє              |
++---------+--- СЂР°СЃРїСЂРµРґРµР»РµРЅРёРµ РІ РѕР±С‰РµРј Р±Р»РѕРєРµ ------------------------------+
+|    |    | 1 |  char   | x              | СЃРјРµС‰РµРЅРёРµ РїРѕ X                 |
+|    |    | 1 |  char   | y              | СЃРјРµС‰РµРЅРёРµ РїРѕ Y                 |
 |    |    |          .  .  .  .  .  .  .  .  .  .                        |
 +---------+--------------------------------------------------------------+
-Если 'x==80h' или (-128), то 'y' содержит в себе команду:
-0          - поднять перо;
-1          - опустить перо ;
-2          - установить тонкое перо;
-3          - установить толстое перо;
-0x10..0x1f - сменить цвет;
-0x80       - конец примитива;
+Р•СЃР»Рё 'x==80h' РёР»Рё (-128), С‚Рѕ 'y' СЃРѕРґРµСЂР¶РёС‚ РІ СЃРµР±Рµ РєРѕРјР°РЅРґСѓ:
+0          - РїРѕРґРЅСЏС‚СЊ РїРµСЂРѕ;
+1          - РѕРїСѓСЃС‚РёС‚СЊ РїРµСЂРѕ ;
+2          - СѓСЃС‚Р°РЅРѕРІРёС‚СЊ С‚РѕРЅРєРѕРµ РїРµСЂРѕ;
+3          - СѓСЃС‚Р°РЅРѕРІРёС‚СЊ С‚РѕР»СЃС‚РѕРµ РїРµСЂРѕ;
+0x10..0x1f - СЃРјРµРЅРёС‚СЊ С†РІРµС‚;
+0x80       - РєРѕРЅРµС† РїСЂРёРјРёС‚РёРІР°;
 </pre>
 
-<h3><a name="Container_Block_Passwords">3.9 Блок настройки паролей </a></h3>
+<h3><a name="Container_Block_Passwords">3.9 Р‘Р»РѕРє РЅР°СЃС‚СЂРѕР№РєРё РїР°СЂРѕР»РµР№ </a></h3>
 <pre class="Prog">
-  структура блока паролей                    (*.cfg  0x60)
+  СЃС‚СЂСѓРєС‚СѓСЂР° Р±Р»РѕРєР° РїР°СЂРѕР»РµР№                    (*.cfg  0x60)
 ----------+---+----------+----------------+------------------------------+
-| позиция |len|   тип    |     имя        |      Описание                |
+| РїРѕР·РёС†РёСЏ |len|   С‚РёРї    |     РёРјСЏ        |      РћРїРёСЃР°РЅРёРµ                |
 +---------+---+----------+----------------+------------------------------+
-|   4|   4| 2 |  int     | Nmen_max       | число пользователей системы  |
-|   6|   6| 2 |  int     | Kod_prp        | код преприятия               |
-|   8|   8| 28| char[28] | Name_prp       | название предприятия         |
-+---------+--- распределение для одного пользователя --------------------+
-|   0|   0| 6 | char[6]  | kod            | код пользователя             |
-|   6|   6| 2 |  word    | prl_bit        | пароль пользователя          |
-|   8|   8| 14| char[14] | name           | имя пользователя             |
-|  22|  16| 2 |  word    | Num_User       | номер пользователя в системе |
-|  24|  18| 4 | struct   | Access_View    | доступ пользов. к просмотру  |
-|  28|  1C| 4 | struct   | Access_Edit    | доступ пользов. к редакции   |
+|   4|   4| 2 |  int     | Nmen_max       | С‡РёСЃР»Рѕ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№ СЃРёСЃС‚РµРјС‹  |
+|   6|   6| 2 |  int     | Kod_prp        | РєРѕРґ РїСЂРµРїСЂРёСЏС‚РёСЏ               |
+|   8|   8| 28| char[28] | Name_prp       | РЅР°Р·РІР°РЅРёРµ РїСЂРµРґРїСЂРёСЏС‚РёСЏ         |
++---------+--- СЂР°СЃРїСЂРµРґРµР»РµРЅРёРµ РґР»СЏ РѕРґРЅРѕРіРѕ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ --------------------+
+|   0|   0| 6 | char[6]  | kod            | РєРѕРґ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ             |
+|   6|   6| 2 |  word    | prl_bit        | РїР°СЂРѕР»СЊ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ          |
+|   8|   8| 14| char[14] | name           | РёРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ             |
+|  22|  16| 2 |  word    | Num_User       | РЅРѕРјРµСЂ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ РІ СЃРёСЃС‚РµРјРµ |
+|  24|  18| 4 | struct   | Access_View    | РґРѕСЃС‚СѓРї РїРѕР»СЊР·РѕРІ. Рє РїСЂРѕСЃРјРѕС‚СЂСѓ  |
+|  28|  1C| 4 | struct   | Access_Edit    | РґРѕСЃС‚СѓРї РїРѕР»СЊР·РѕРІ. Рє СЂРµРґР°РєС†РёРё   |
 |  32|  20|           .  .  .  .  .  .  .  .  .  .                       |
 +---------+--------------------------------------------------------------+
 </pre>
 
-<h3><a name="Container_Block_Paths">3.10 Блок путей к графической базе</a></h3>
+<h3><a name="Container_Block_Paths">3.10 Р‘Р»РѕРє РїСѓС‚РµР№ Рє РіСЂР°С„РёС‡РµСЃРєРѕР№ Р±Р°Р·Рµ</a></h3>
 <pre class="Prog">
-  структура блока путей к распределенной базе         (*.cfg  0x64)
+  СЃС‚СЂСѓРєС‚СѓСЂР° Р±Р»РѕРєР° РїСѓС‚РµР№ Рє СЂР°СЃРїСЂРµРґРµР»РµРЅРЅРѕР№ Р±Р°Р·Рµ         (*.cfg  0x64)
  ----------+---+----------+----------------+------------------------------+
- | позиция |len|   тип    |     имя        |      Описание                |
+ | РїРѕР·РёС†РёСЏ |len|   С‚РёРї    |     РёРјСЏ        |      РћРїРёСЃР°РЅРёРµ                |
  +---------+---+----------+----------------+------------------------------+
- |   4|   4| 2 |  int     | Num_all        | число путей в базе           |
- |   6|   6| 2 |  int     | num            | длина общего блока           |
- |   8|   8|num|char[num] | fbloc          | общий блок                   |
- +---------+--- распределение в общем блоке ------------------------------+
- |    |    | ? |char[Num] | Type           | тип окончания g*.mp?<---     |
- |    |    | ? |char[?]   | Path[0]        | путь к первому слою          |
+ |   4|   4| 2 |  int     | Num_all        | С‡РёСЃР»Рѕ РїСѓС‚РµР№ РІ Р±Р°Р·Рµ           |
+ |   6|   6| 2 |  int     | num            | РґР»РёРЅР° РѕР±С‰РµРіРѕ Р±Р»РѕРєР°           |
+ |   8|   8|num|char[num] | fbloc          | РѕР±С‰РёР№ Р±Р»РѕРє                   |
+ +---------+--- СЂР°СЃРїСЂРµРґРµР»РµРЅРёРµ РІ РѕР±С‰РµРј Р±Р»РѕРєРµ ------------------------------+
+ |    |    | ? |char[Num] | Type           | С‚РёРї РѕРєРѕРЅС‡Р°РЅРёСЏ g*.mp?<---     |
+ |    |    | ? |char[?]   | Path[0]        | РїСѓС‚СЊ Рє РїРµСЂРІРѕРјСѓ СЃР»РѕСЋ          |
  |    |    |           .  .  .  .  .  .  .  .  .  .                       |
- |    |    | ? |char[?]   | Path[Num_all-1]| путь к последнему слою       |
- |    |    | ? |char[?]   | Kat_rastr      | путь к файлам подложки .pcm  |*
- |    |    | ? |char[?]   | Kat_Global     | путь к настройке пред.(*.cfp)|*
+ |    |    | ? |char[?]   | Path[Num_all-1]| РїСѓС‚СЊ Рє РїРѕСЃР»РµРґРЅРµРјСѓ СЃР»РѕСЋ       |
+ |    |    | ? |char[?]   | Kat_rastr      | РїСѓС‚СЊ Рє С„Р°Р№Р»Р°Рј РїРѕРґР»РѕР¶РєРё .pcm  |*
+ |    |    | ? |char[?]   | Kat_Global     | РїСѓС‚СЊ Рє РЅР°СЃС‚СЂРѕР№РєРµ РїСЂРµРґ.(*.cfp)|*
  +---------+--------------+----------------+------------------------------+
 </pre>
 
-<h3><a name="Container_Block_Autor">3.11 Блок описания создателя графической базы </a></h3>
+<h3><a name="Container_Block_Autor">3.11 Р‘Р»РѕРє РѕРїРёСЃР°РЅРёСЏ СЃРѕР·РґР°С‚РµР»СЏ РіСЂР°С„РёС‡РµСЃРєРѕР№ Р±Р°Р·С‹ </a></h3>
 <pre class="Prog">
-  блок описания создателя графической базы         (*.cfg  0x68)
+  Р±Р»РѕРє РѕРїРёСЃР°РЅРёСЏ СЃРѕР·РґР°С‚РµР»СЏ РіСЂР°С„РёС‡РµСЃРєРѕР№ Р±Р°Р·С‹         (*.cfg  0x68)
 ----------+---+----------+-------------+---------------------------------+
-| позиция |len|   тип    |     имя     |      Описание                   |
+| РїРѕР·РёС†РёСЏ |len|   С‚РёРї    |     РёРјСЏ     |      РћРїРёСЃР°РЅРёРµ                   |
 +---------+---+----------+-------------+---------------------------------+
-|  4 |  4 | 2 |  int     | Num_str     | число строк текста              |
-|  6 |  6 | 2 |  int     | Num_char    | число знаков текста             |
-|  8 |  8 | 2 |  int     | num         | длина общего блока              |
-| 10 |  A |num| char[num]| base_cr     | общий блок                      |
+|  4 |  4 | 2 |  int     | Num_str     | С‡РёСЃР»Рѕ СЃС‚СЂРѕРє С‚РµРєСЃС‚Р°              |
+|  6 |  6 | 2 |  int     | Num_char    | С‡РёСЃР»Рѕ Р·РЅР°РєРѕРІ С‚РµРєСЃС‚Р°             |
+|  8 |  8 | 2 |  int     | num         | РґР»РёРЅР° РѕР±С‰РµРіРѕ Р±Р»РѕРєР°              |
+| 10 |  A |num| char[num]| base_cr     | РѕР±С‰РёР№ Р±Р»РѕРє                      |
 |    |    |           .  .  .  .  .  .  .  .  .  .                       |
 +---------+--------------------------------------------------------------+
 </pre>
 
-<h3><a name="Container_Block_CoordinateSystem">3.12 Блок номенклатуры местной системы координат </a></h3>
+<h3><a name="Container_Block_CoordinateSystem">3.12 Р‘Р»РѕРє РЅРѕРјРµРЅРєР»Р°С‚СѓСЂС‹ РјРµСЃС‚РЅРѕР№ СЃРёСЃС‚РµРјС‹ РєРѕРѕСЂРґРёРЅР°С‚ </a></h3>
 <pre class="Prog">
-  блок номенклатуры местной системы координат      (*.cfg  0x6С)
+  Р±Р»РѕРє РЅРѕРјРµРЅРєР»Р°С‚СѓСЂС‹ РјРµСЃС‚РЅРѕР№ СЃРёСЃС‚РµРјС‹ РєРѕРѕСЂРґРёРЅР°С‚      (*.cfg  0x6РЎ)
 ----------+---+----------+-------------+---------------------------------+
-| позиция |len|   тип    |     имя     |      Описание                   |
+| РїРѕР·РёС†РёСЏ |len|   С‚РёРї    |     РёРјСЏ     |      РћРїРёСЃР°РЅРёРµ                   |
 +---------+---+----------+-------------+---------------------------------+
-|  2 |  2 | 4 |  long    |lLenMaxX     | длина всего по X (горизонтали)  |
-|  2 |  2 | 4 |  long    |lLenMaxY     | длина всего по Y (вертикали)    |
-|  2 |  2 | 4 |  long    |lSmehX       | смещение по X (горизонтали)     |
-|  2 |  2 | 4 |  long    |lSmehY       | смещение по Y (вертикали)       |
-|  2 |  2 | 2 |  int     |iNumPl       | число планшетов в линейке       |
-|  2 |  2 | 2 |  int     |iNumFrst     | номер перв.планшета в перв.лин. |
+|  2 |  2 | 4 |  long    |lLenMaxX     | РґР»РёРЅР° РІСЃРµРіРѕ РїРѕ X (РіРѕСЂРёР·РѕРЅС‚Р°Р»Рё)  |
+|  2 |  2 | 4 |  long    |lLenMaxY     | РґР»РёРЅР° РІСЃРµРіРѕ РїРѕ Y (РІРµСЂС‚РёРєР°Р»Рё)    |
+|  2 |  2 | 4 |  long    |lSmehX       | СЃРјРµС‰РµРЅРёРµ РїРѕ X (РіРѕСЂРёР·РѕРЅС‚Р°Р»Рё)     |
+|  2 |  2 | 4 |  long    |lSmehY       | СЃРјРµС‰РµРЅРёРµ РїРѕ Y (РІРµСЂС‚РёРєР°Р»Рё)       |
+|  2 |  2 | 2 |  int     |iNumPl       | С‡РёСЃР»Рѕ РїР»Р°РЅС€РµС‚РѕРІ РІ Р»РёРЅРµР№РєРµ       |
+|  2 |  2 | 2 |  int     |iNumFrst     | РЅРѕРјРµСЂ РїРµСЂРІ.РїР»Р°РЅС€РµС‚Р° РІ РїРµСЂРІ.Р»РёРЅ. |
 +---------+---+----------+-------------+---------------------------------+
 </pre>
 
-<h3><a name="Container_Block_DataBase">3.13 Блоки настройки семантической базы </a>[0-255]</h3>
+<h3><a name="Container_Block_DataBase">3.13 Р‘Р»РѕРєРё РЅР°СЃС‚СЂРѕР№РєРё СЃРµРјР°РЅС‚РёС‡РµСЃРєРѕР№ Р±Р°Р·С‹ </a>[0-255]</h3>
 <pre class="Prog">
-  блок общей настройки семантической базы          (in *.cfg)
+  Р±Р»РѕРє РѕР±С‰РµР№ РЅР°СЃС‚СЂРѕР№РєРё СЃРµРјР°РЅС‚РёС‡РµСЃРєРѕР№ Р±Р°Р·С‹          (in *.cfg)
  ----------+---+----------+----------------+------------------------------+
- | позиция |len|   тип    |     имя        |      Описание                |
+ | РїРѕР·РёС†РёСЏ |len|   С‚РёРї    |     РёРјСЏ        |      РћРїРёСЃР°РЅРёРµ                |
  +---------+---+----------+----------------+------------------------------+
- |  4 |  4 |28 | char[28] | Name_List      | название базы ( в заголовке )|
- | 32 | 20 | 1 |  byte    | bNIndex        | Число первичных индексов     |
- | 33 | 21 |1/8|  byte    | bPoisk         | 1 -> помещение в меню ПОИСК  |
- | 33 | 21 |1/8|  byte    | bIsSystem      |1->системная база с заголовком|
- | 34 | 22 | 2 |  int     | N_Fields (Fld) | число полей в базе           |
- | 36 | 24 | 2 |  int     | num            | длина общего блока           |
- | 38 | 26 |num| char[num]| base_cr        | общий блок                   |
- +---------+--- распределение в общем блоке ------------------------------+
- |    |   2*Fld|setFild[Fld]   Fild        | число цифр до и после точки  |
- |    |    | ? | char[?]  | File           | путь и имя файла             |
- |    |    | ? | char[?]  | Name[i]        | Идентификатор поля           |
- |    |    | ? | char[?]  | Type[i]        | тип поля                     |
- |    |    | ? | char[?]  | MetH[i]        | строка вызова классификатора |
- |    |    | ? | char[?]  | Help[i]        | подсказка по содержимому поля|
+ |  4 |  4 |28 | char[28] | Name_List      | РЅР°Р·РІР°РЅРёРµ Р±Р°Р·С‹ ( РІ Р·Р°РіРѕР»РѕРІРєРµ )|
+ | 32 | 20 | 1 |  byte    | bNIndex        | Р§РёСЃР»Рѕ РїРµСЂРІРёС‡РЅС‹С… РёРЅРґРµРєСЃРѕРІ     |
+ | 33 | 21 |1/8|  byte    | bPoisk         | 1 -> РїРѕРјРµС‰РµРЅРёРµ РІ РјРµРЅСЋ РџРћРРЎРљ  |
+ | 33 | 21 |1/8|  byte    | bIsSystem      |1->СЃРёСЃС‚РµРјРЅР°СЏ Р±Р°Р·Р° СЃ Р·Р°РіРѕР»РѕРІРєРѕРј|
+ | 34 | 22 | 2 |  int     | N_Fields (Fld) | С‡РёСЃР»Рѕ РїРѕР»РµР№ РІ Р±Р°Р·Рµ           |
+ | 36 | 24 | 2 |  int     | num            | РґР»РёРЅР° РѕР±С‰РµРіРѕ Р±Р»РѕРєР°           |
+ | 38 | 26 |num| char[num]| base_cr        | РѕР±С‰РёР№ Р±Р»РѕРє                   |
+ +---------+--- СЂР°СЃРїСЂРµРґРµР»РµРЅРёРµ РІ РѕР±С‰РµРј Р±Р»РѕРєРµ ------------------------------+
+ |    |   2*Fld|setFild[Fld]   Fild        | С‡РёСЃР»Рѕ С†РёС„СЂ РґРѕ Рё РїРѕСЃР»Рµ С‚РѕС‡РєРё  |
+ |    |    | ? | char[?]  | File           | РїСѓС‚СЊ Рё РёРјСЏ С„Р°Р№Р»Р°             |
+ |    |    | ? | char[?]  | Name[i]        | РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РїРѕР»СЏ           |
+ |    |    | ? | char[?]  | Type[i]        | С‚РёРї РїРѕР»СЏ                     |
+ |    |    | ? | char[?]  | MetH[i]        | СЃС‚СЂРѕРєР° РІС‹Р·РѕРІР° РєР»Р°СЃСЃРёС„РёРєР°С‚РѕСЂР° |
+ |    |    | ? | char[?]  | Help[i]        | РїРѕРґСЃРєР°Р·РєР° РїРѕ СЃРѕРґРµСЂР¶РёРјРѕРјСѓ РїРѕР»СЏ|
  |    |    |           .  .  .  .  .  .  .  .  .  .                       |
  +---------+--------------------------------------------------------------+
 </pre>

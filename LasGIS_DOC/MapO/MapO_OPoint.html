@@ -1,14 +1,14 @@
 <html>
 
 <head>
-<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
 <meta NAME="GENERATOR" CONTENT="Microsoft FrontPage 4.0">
 <link rel="stylesheet" type="text/css" href="..\images\default.css">
-<title>Тело графического объекта типа точка (OPoint)</title>
+<title>РўРµР»Рѕ РіСЂР°С„РёС‡РµСЃРєРѕРіРѕ РѕР±СЉРµРєС‚Р° С‚РёРїР° С‚РѕС‡РєР° (OPoint)</title>
 </head>
 
 <body>
-<h2>1.2.Тело графического объекта типа точка (OPoint)</h2>
+<h2>1.2.РўРµР»Рѕ РіСЂР°С„РёС‡РµСЃРєРѕРіРѕ РѕР±СЉРµРєС‚Р° С‚РёРїР° С‚РѕС‡РєР° (OPoint)</h2>
 
 <table cellspacing="0" cellpadding="0">
   <tr>
@@ -16,66 +16,66 @@
     <td><p class="Prog">class <span class="ProgTerm">OPoint</span>: public <a
     href="MapO_Object.html">MapObject</a> {<br>
     &nbsp;&nbsp;&nbsp; long <span class="ProgTerm">X</span>; <span class="ProgComment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    // Координата X объекта на местности</span><br>
+    // РљРѕРѕСЂРґРёРЅР°С‚Р° X РѕР±СЉРµРєС‚Р° РЅР° РјРµСЃС‚РЅРѕСЃС‚Рё</span><br>
     &nbsp;&nbsp;&nbsp; long <span class="ProgTerm">Y</span>; <span class="ProgComment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    // Координата <strong>Y </strong>объекта на местности</span><br>
+    // РљРѕРѕСЂРґРёРЅР°С‚Р° <strong>Y </strong>РѕР±СЉРµРєС‚Р° РЅР° РјРµСЃС‚РЅРѕСЃС‚Рё</span><br>
     &nbsp;&nbsp;&nbsp; long <span class="ProgTerm">Prec</span>; <span class="ProgComment">&nbsp;&nbsp;&nbsp;&nbsp;
-    // Точность координат <strong>X</strong> и <strong>Y</strong></span><br>
+    // РўРѕС‡РЅРѕСЃС‚СЊ РєРѕРѕСЂРґРёРЅР°С‚ <strong>X</strong> Рё <strong>Y</strong></span><br>
     &nbsp;&nbsp;&nbsp; WORD <span class="ProgTerm">VisibleH</span>;&nbsp;<span class="ProgComment">
-    // Число видимых высот точки</span><br>
+    // Р§РёСЃР»Рѕ РІРёРґРёРјС‹С… РІС‹СЃРѕС‚ С‚РѕС‡РєРё</span><br>
     &nbsp; &nbsp; WORD <span class="ProgTerm">NumH</span>; <span class="ProgComment">&nbsp;&nbsp;&nbsp;&nbsp;
-    // Число высот точки</span><br>
+    // Р§РёСЃР»Рѕ РІС‹СЃРѕС‚ С‚РѕС‡РєРё</span><br>
     &nbsp;&nbsp;&nbsp; long * <span class="ProgTerm">H</span>; <span class="ProgComment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    // Ссылка на массив высот точки</span><br>
-    }; <span class="ProgComment">// размер структуры 40+20=60 байт</span></td>
+    // РЎСЃС‹Р»РєР° РЅР° РјР°СЃСЃРёРІ РІС‹СЃРѕС‚ С‚РѕС‡РєРё</span><br>
+    }; <span class="ProgComment">// СЂР°Р·РјРµСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ 40+20=60 Р±Р°Р№С‚</span></td>
   </tr>
 </table>
 
-<p>Точка является внемасштабным знаком на карте.
-Примером точки может являться колодец,
-одиноко-стоящее дерево, знак населенного пункта
-и так далее. Объект типа точка состоит из
-заголовка, координат точки и определенного в
-заголовке числа высот:</p>
+<p>РўРѕС‡РєР° СЏРІР»СЏРµС‚СЃСЏ РІРЅРµРјР°СЃС€С‚Р°Р±РЅС‹Рј Р·РЅР°РєРѕРј РЅР° РєР°СЂС‚Рµ.
+РџСЂРёРјРµСЂРѕРј С‚РѕС‡РєРё РјРѕР¶РµС‚ СЏРІР»СЏС‚СЊСЃСЏ РєРѕР»РѕРґРµС†,
+РѕРґРёРЅРѕРєРѕ-СЃС‚РѕСЏС‰РµРµ РґРµСЂРµРІРѕ, Р·РЅР°Рє РЅР°СЃРµР»РµРЅРЅРѕРіРѕ РїСѓРЅРєС‚Р°
+Рё С‚Р°Рє РґР°Р»РµРµ. РћР±СЉРµРєС‚ С‚РёРїР° С‚РѕС‡РєР° СЃРѕСЃС‚РѕРёС‚ РёР·
+Р·Р°РіРѕР»РѕРІРєР°, РєРѕРѕСЂРґРёРЅР°С‚ С‚РѕС‡РєРё Рё РѕРїСЂРµРґРµР»РµРЅРЅРѕРіРѕ РІ
+Р·Р°РіРѕР»РѕРІРєРµ С‡РёСЃР»Р° РІС‹СЃРѕС‚:</p>
 
-<p>Здесь:</p>
+<p>Р—РґРµСЃСЊ:</p>
 
-<p>Параметры <span class="Refer">&lt;X&gt;</span> и <span class="Refer">&lt;Y&gt;</span> составляют
-координаты точки объекта. Координата <span class="Refer">&lt;<strong>X</strong>&gt;</span>
-определяет широту точки, а координата <span class="Refer">&lt;<strong>Y</strong>&gt;</span> -
-долготу точки обьекта в сантиметрах местности,
-если объект находится на уровнях от 0-го до 5-го
-(масштаб 1:200 000) включительно и в 1/10000000 долях
-градуса, если объект находится на уровнях выше от
-5-го.</p>
+<p>РџР°СЂР°РјРµС‚СЂС‹ <span class="Refer">&lt;X&gt;</span> Рё <span class="Refer">&lt;Y&gt;</span> СЃРѕСЃС‚Р°РІР»СЏСЋС‚
+РєРѕРѕСЂРґРёРЅР°С‚С‹ С‚РѕС‡РєРё РѕР±СЉРµРєС‚Р°. РљРѕРѕСЂРґРёРЅР°С‚Р° <span class="Refer">&lt;<strong>X</strong>&gt;</span>
+РѕРїСЂРµРґРµР»СЏРµС‚ С€РёСЂРѕС‚Сѓ С‚РѕС‡РєРё, Р° РєРѕРѕСЂРґРёРЅР°С‚Р° <span class="Refer">&lt;<strong>Y</strong>&gt;</span> -
+РґРѕР»РіРѕС‚Сѓ С‚РѕС‡РєРё РѕР±СЊРµРєС‚Р° РІ СЃР°РЅС‚РёРјРµС‚СЂР°С… РјРµСЃС‚РЅРѕСЃС‚Рё,
+РµСЃР»Рё РѕР±СЉРµРєС‚ РЅР°С…РѕРґРёС‚СЃСЏ РЅР° СѓСЂРѕРІРЅСЏС… РѕС‚ 0-РіРѕ РґРѕ 5-РіРѕ
+(РјР°СЃС€С‚Р°Р± 1:200 000) РІРєР»СЋС‡РёС‚РµР»СЊРЅРѕ Рё РІ 1/10000000 РґРѕР»СЏС…
+РіСЂР°РґСѓСЃР°, РµСЃР»Рё РѕР±СЉРµРєС‚ РЅР°С…РѕРґРёС‚СЃСЏ РЅР° СѓСЂРѕРІРЅСЏС… РІС‹С€Рµ РѕС‚
+5-РіРѕ.</p>
 
-<p><span class="Refer">&lt;<strong>Prec</strong>&gt;</span> точность координат
-<span class="Refer">&lt;<strong>X</strong>&gt;</span> и <span class="Refer">&lt;<strong>Y</strong>&gt;</span>
-определяется как погрешность определения
-координаты в [см] местности. Точность
-определяется:</p>
+<p><span class="Refer">&lt;<strong>Prec</strong>&gt;</span> С‚РѕС‡РЅРѕСЃС‚СЊ РєРѕРѕСЂРґРёРЅР°С‚
+<span class="Refer">&lt;<strong>X</strong>&gt;</span> Рё <span class="Refer">&lt;<strong>Y</strong>&gt;</span>
+РѕРїСЂРµРґРµР»СЏРµС‚СЃСЏ РєР°Рє РїРѕРіСЂРµС€РЅРѕСЃС‚СЊ РѕРїСЂРµРґРµР»РµРЅРёСЏ
+РєРѕРѕСЂРґРёРЅР°С‚С‹ РІ [СЃРј] РјРµСЃС‚РЅРѕСЃС‚Рё. РўРѕС‡РЅРѕСЃС‚СЊ
+РѕРїСЂРµРґРµР»СЏРµС‚СЃСЏ:</p>
 
-<p>при скалывании мышкой - автоматически по
-масштабу изображения на экране,</p>
+<p>РїСЂРё СЃРєР°Р»С‹РІР°РЅРёРё РјС‹С€РєРѕР№ - Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё РїРѕ
+РјР°СЃС€С‚Р°Р±Сѓ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ РЅР° СЌРєСЂР°РЅРµ,</p>
 
-<p>при вводе с клавиатуры – погрешность считается
-нулевой.</p>
+<p>РїСЂРё РІРІРѕРґРµ СЃ РєР»Р°РІРёР°С‚СѓСЂС‹ вЂ“ РїРѕРіСЂРµС€РЅРѕСЃС‚СЊ СЃС‡РёС‚Р°РµС‚СЃСЏ
+РЅСѓР»РµРІРѕР№.</p>
 
-<p>Параметр<strong> </strong><span class="Refer">&lt;<strong>VisibleH</strong>&gt;</span> содержит число
-первых точек, которые будут выведены на карту.</p>
+<p>РџР°СЂР°РјРµС‚СЂ<strong> </strong><span class="Refer">&lt;<strong>VisibleH</strong>&gt;</span> СЃРѕРґРµСЂР¶РёС‚ С‡РёСЃР»Рѕ
+РїРµСЂРІС‹С… С‚РѕС‡РµРє, РєРѕС‚РѕСЂС‹Рµ Р±СѓРґСѓС‚ РІС‹РІРµРґРµРЅС‹ РЅР° РєР°СЂС‚Сѓ.</p>
 
-<p>Параметр <span class="Refer">&lt;<strong>NumH</strong>&gt;</span> содержит полное число
-высот данной точки. Этот параметр определяет
-размерность массива высот точки <span class="Refer">&lt;<strong>H</strong>&gt;</span>.</p>
+<p>РџР°СЂР°РјРµС‚СЂ <span class="Refer">&lt;<strong>NumH</strong>&gt;</span> СЃРѕРґРµСЂР¶РёС‚ РїРѕР»РЅРѕРµ С‡РёСЃР»Рѕ
+РІС‹СЃРѕС‚ РґР°РЅРЅРѕР№ С‚РѕС‡РєРё. Р­С‚РѕС‚ РїР°СЂР°РјРµС‚СЂ РѕРїСЂРµРґРµР»СЏРµС‚
+СЂР°Р·РјРµСЂРЅРѕСЃС‚СЊ РјР°СЃСЃРёРІР° РІС‹СЃРѕС‚ С‚РѕС‡РєРё <span class="Refer">&lt;<strong>H</strong>&gt;</span>.</p>
 
-<p><span class="Refer">&lt;<strong>H</strong>&gt;</span> - массив высот точки.</p>
+<p><span class="Refer">&lt;<strong>H</strong>&gt;</span> - РјР°СЃСЃРёРІ РІС‹СЃРѕС‚ С‚РѕС‡РєРё.</p>
 
-<p class="Remark">Смотри также:</p>
-<p class="Notice"><a href="MapO_Object.html">Общий заголовок
-графического объекта (<strong>MapObject</strong>)</a></p>
+<p class="Remark">РЎРјРѕС‚СЂРё С‚Р°РєР¶Рµ:</p>
+<p class="Notice"><a href="MapO_Object.html">РћР±С‰РёР№ Р·Р°РіРѕР»РѕРІРѕРє
+РіСЂР°С„РёС‡РµСЃРєРѕРіРѕ РѕР±СЉРµРєС‚Р° (<strong>MapObject</strong>)</a></p>
 
-<p class="Notice"><a href="MapO_eLine.html">Формат элементарной линии (<strong>eLine</strong>)</a></p>
+<p class="Notice"><a href="MapO_eLine.html">Р¤РѕСЂРјР°С‚ СЌР»РµРјРµРЅС‚Р°СЂРЅРѕР№ Р»РёРЅРёРё (<strong>eLine</strong>)</a></p>
 
-<p class="Notice"><a href="MapO_ePoint.html">Формат элементарной точки (<strong>ePoint</strong>)</a></p>
+<p class="Notice"><a href="MapO_ePoint.html">Р¤РѕСЂРјР°С‚ СЌР»РµРјРµРЅС‚Р°СЂРЅРѕР№ С‚РѕС‡РєРё (<strong>ePoint</strong>)</a></p>
 </body>
 </html>

@@ -1,65 +1,65 @@
 <html>
 
 <head>
-<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
 <meta NAME="GENERATOR" CONTENT="Microsoft FrontPage 4.0">
 <link rel="stylesheet" type="text/css" href="../images/default.css">
-<title>Тело графического объекта типа линия (OLine)</title>
+<title>РўРµР»Рѕ РіСЂР°С„РёС‡РµСЃРєРѕРіРѕ РѕР±СЉРµРєС‚Р° С‚РёРїР° Р»РёРЅРёСЏ (OLine)</title>
 </head>
 
 <body>
 <sup>
 
-<h2></sup>1.3.Тело графического объекта типа линия (OLine)</h2>
+<h2></sup>1.3.РўРµР»Рѕ РіСЂР°С„РёС‡РµСЃРєРѕРіРѕ РѕР±СЉРµРєС‚Р° С‚РёРїР° Р»РёРЅРёСЏ (OLine)</h2>
 
 <table cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top"><img src="../images/forefinger.jpg" width="16" height="16"></td>
     <td><p class="Prog">class <span class="ProgTerm">OLine</span>: public <a href="MapO_Object.html">MapObject</a> {<br>
-      &nbsp;&nbsp; WORD <span class="ProgTerm">NumELine</span>;&nbsp;&nbsp;&nbsp; <span class="ProgComment">// число элементарных линии</span><br>
-      &nbsp;&nbsp; WORD <span class="ProgTerm">NumELineMax</span>; <span class="ProgComment">// Размер массива ELine</span><br>
+      &nbsp;&nbsp; WORD <span class="ProgTerm">NumELine</span>;&nbsp;&nbsp;&nbsp; <span class="ProgComment">// С‡РёСЃР»Рѕ СЌР»РµРјРµРЅС‚Р°СЂРЅС‹С… Р»РёРЅРёРё</span><br>
+      &nbsp;&nbsp; WORD <span class="ProgTerm">NumELineMax</span>; <span class="ProgComment">// Р Р°Р·РјРµСЂ РјР°СЃСЃРёРІР° ELine</span><br>
       &nbsp;&nbsp; <a href="MapO_eLine.html">eLine</a> * <span class="ProgTerm">ELine</span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <span class="ProgComment">// массив элементарных линий</span><br>
-      }; <span class="ProgComment">// размер структуры 40+8=48 байт</span></p>
+      <span class="ProgComment">// РјР°СЃСЃРёРІ СЌР»РµРјРµРЅС‚Р°СЂРЅС‹С… Р»РёРЅРёР№</span><br>
+      }; <span class="ProgComment">// СЂР°Р·РјРµСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ 40+8=48 Р±Р°Р№С‚</span></p>
     </td>
   </tr>
 </table>
 
-<p>Линия является масштабируемым объектом карты.
-Примером линии может являться дорога, улица, река
-и так далее. Объект линия состоит из заголовка и
-списка элементарных линий, составляющих линию:</p>
+<p>Р›РёРЅРёСЏ СЏРІР»СЏРµС‚СЃСЏ РјР°СЃС€С‚Р°Р±РёСЂСѓРµРјС‹Рј РѕР±СЉРµРєС‚РѕРј РєР°СЂС‚С‹.
+РџСЂРёРјРµСЂРѕРј Р»РёРЅРёРё РјРѕР¶РµС‚ СЏРІР»СЏС‚СЊСЃСЏ РґРѕСЂРѕРіР°, СѓР»РёС†Р°, СЂРµРєР°
+Рё С‚Р°Рє РґР°Р»РµРµ. РћР±СЉРµРєС‚ Р»РёРЅРёСЏ СЃРѕСЃС‚РѕРёС‚ РёР· Р·Р°РіРѕР»РѕРІРєР° Рё
+СЃРїРёСЃРєР° СЌР»РµРјРµРЅС‚Р°СЂРЅС‹С… Р»РёРЅРёР№, СЃРѕСЃС‚Р°РІР»СЏСЋС‰РёС… Р»РёРЅРёСЋ:</p>
 
-<p>В общем случае линия может состоять из
-нескольких линий, например, улица, которая
-проходит через площадь. В этом случае первая
-элементарная линия кончается на одном краю
-площади, а вторая элементарная линия начинается
-на другом краю площади.</p>
+<p>Р’ РѕР±С‰РµРј СЃР»СѓС‡Р°Рµ Р»РёРЅРёСЏ РјРѕР¶РµС‚ СЃРѕСЃС‚РѕСЏС‚СЊ РёР·
+РЅРµСЃРєРѕР»СЊРєРёС… Р»РёРЅРёР№, РЅР°РїСЂРёРјРµСЂ, СѓР»РёС†Р°, РєРѕС‚РѕСЂР°СЏ
+РїСЂРѕС…РѕРґРёС‚ С‡РµСЂРµР· РїР»РѕС‰Р°РґСЊ. Р’ СЌС‚РѕРј СЃР»СѓС‡Р°Рµ РїРµСЂРІР°СЏ
+СЌР»РµРјРµРЅС‚Р°СЂРЅР°СЏ Р»РёРЅРёСЏ РєРѕРЅС‡Р°РµС‚СЃСЏ РЅР° РѕРґРЅРѕРј РєСЂР°СЋ
+РїР»РѕС‰Р°РґРё, Р° РІС‚РѕСЂР°СЏ СЌР»РµРјРµРЅС‚Р°СЂРЅР°СЏ Р»РёРЅРёСЏ РЅР°С‡РёРЅР°РµС‚СЃСЏ
+РЅР° РґСЂСѓРіРѕРј РєСЂР°СЋ РїР»РѕС‰Р°РґРё.</p>
 
-<p>Параметр <span class="Refer">&lt;NumЕLine&gt;</span> определяет число
-элементарных линий, составляющих линию.</p>
+<p>РџР°СЂР°РјРµС‚СЂ <span class="Refer">&lt;NumР•Line&gt;</span> РѕРїСЂРµРґРµР»СЏРµС‚ С‡РёСЃР»Рѕ
+СЌР»РµРјРµРЅС‚Р°СЂРЅС‹С… Р»РёРЅРёР№, СЃРѕСЃС‚Р°РІР»СЏСЋС‰РёС… Р»РёРЅРёСЋ.</p>
 
-<p>Параметр <span class="Refer">&lt;NumELineMax&gt;</span> определяет размер
-массива <span class="Refer">&lt;eLine&gt;</span> - число элементарных линий,
-составляющих линию.</p>
+<p>РџР°СЂР°РјРµС‚СЂ <span class="Refer">&lt;NumELineMax&gt;</span> РѕРїСЂРµРґРµР»СЏРµС‚ СЂР°Р·РјРµСЂ
+РјР°СЃСЃРёРІР° <span class="Refer">&lt;eLine&gt;</span> - С‡РёСЃР»Рѕ СЌР»РµРјРµРЅС‚Р°СЂРЅС‹С… Р»РёРЅРёР№,
+СЃРѕСЃС‚Р°РІР»СЏСЋС‰РёС… Р»РёРЅРёСЋ.</p>
 
-<p>Параметр <span class="Refer">&lt;eLine&gt;</span> указывает на массив
-элементарных линий, которые составляют объекта
-типа линия. Длина массива может меняться в
-процессе редактирования объекта. При этом в
-случае увеличения размера больше, чем <span class="Refer">&lt;NumELineMax&gt;</span>
-необходимо увеличить массив функцией <strong>Realloc</strong>.
-При изменении размера меньше, чем <span class="Refer">&lt;NumELineMax&gt;</span>
-изменяется лишь параметр <span class="Refer">&lt;NumЕLine&gt;</span>.</p>
+<p>РџР°СЂР°РјРµС‚СЂ <span class="Refer">&lt;eLine&gt;</span> СѓРєР°Р·С‹РІР°РµС‚ РЅР° РјР°СЃСЃРёРІ
+СЌР»РµРјРµРЅС‚Р°СЂРЅС‹С… Р»РёРЅРёР№, РєРѕС‚РѕСЂС‹Рµ СЃРѕСЃС‚Р°РІР»СЏСЋС‚ РѕР±СЉРµРєС‚Р°
+С‚РёРїР° Р»РёРЅРёСЏ. Р”Р»РёРЅР° РјР°СЃСЃРёРІР° РјРѕР¶РµС‚ РјРµРЅСЏС‚СЊСЃСЏ РІ
+РїСЂРѕС†РµСЃСЃРµ СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёСЏ РѕР±СЉРµРєС‚Р°. РџСЂРё СЌС‚РѕРј РІ
+СЃР»СѓС‡Р°Рµ СѓРІРµР»РёС‡РµРЅРёСЏ СЂР°Р·РјРµСЂР° Р±РѕР»СЊС€Рµ, С‡РµРј <span class="Refer">&lt;NumELineMax&gt;</span>
+РЅРµРѕР±С…РѕРґРёРјРѕ СѓРІРµР»РёС‡РёС‚СЊ РјР°СЃСЃРёРІ С„СѓРЅРєС†РёРµР№ <strong>Realloc</strong>.
+РџСЂРё РёР·РјРµРЅРµРЅРёРё СЂР°Р·РјРµСЂР° РјРµРЅСЊС€Рµ, С‡РµРј <span class="Refer">&lt;NumELineMax&gt;</span>
+РёР·РјРµРЅСЏРµС‚СЃСЏ Р»РёС€СЊ РїР°СЂР°РјРµС‚СЂ <span class="Refer">&lt;NumР•Line&gt;</span>.</p>
 
-<p class="Remark"><strong>Смотри также:</strong></p>
+<p class="Remark"><strong>РЎРјРѕС‚СЂРё С‚Р°РєР¶Рµ:</strong></p>
 
-<p class="Notice"><a href="MapO_Object.html">Общий заголовок графического
-объекта <strong>(MapObject)</strong></a></p>
+<p class="Notice"><a href="MapO_Object.html">РћР±С‰РёР№ Р·Р°РіРѕР»РѕРІРѕРє РіСЂР°С„РёС‡РµСЃРєРѕРіРѕ
+РѕР±СЉРµРєС‚Р° <strong>(MapObject)</strong></a></p>
 
-<p class="Notice"><a href="MapO_eLine.html">Формат элементарной линии (<strong>eLine</strong>)</a></p>
+<p class="Notice"><a href="MapO_eLine.html">Р¤РѕСЂРјР°С‚ СЌР»РµРјРµРЅС‚Р°СЂРЅРѕР№ Р»РёРЅРёРё (<strong>eLine</strong>)</a></p>
 
-<p class="Notice"><a href="MapO_ePoint.html">Формат элементарной точки (<strong>ePoint</strong>)</a></p>
+<p class="Notice"><a href="MapO_ePoint.html">Р¤РѕСЂРјР°С‚ СЌР»РµРјРµРЅС‚Р°СЂРЅРѕР№ С‚РѕС‡РєРё (<strong>ePoint</strong>)</a></p>
 </body>
 </html>

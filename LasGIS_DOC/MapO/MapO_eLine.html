@@ -1,61 +1,61 @@
 <html>
 
 <head>
-<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
 <meta NAME="GENERATOR" CONTENT="Microsoft FrontPage 4.0">
 <link rel="stylesheet" type="text/css" href="../images/default.css">
-<title>Формат элементарной линии (eLine)</title>
+<title>Р¤РѕСЂРјР°С‚ СЌР»РµРјРµРЅС‚Р°СЂРЅРѕР№ Р»РёРЅРёРё (eLine)</title>
 </head>
 
 <body>
 <sup>
 
-<h2></sup>1.7. Формат элементарной линии (eLine)</h2>
+<h2></sup>1.7. Р¤РѕСЂРјР°С‚ СЌР»РµРјРµРЅС‚Р°СЂРЅРѕР№ Р»РёРЅРёРё (eLine)</h2>
 
 <table cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top"><img src="../images/forefinger.jpg" width="16" height="16"></td>
     <td><p class="Prog">class <span class="ProgTerm">eLine</span> {<br>
     &nbsp;&nbsp; WORD <span class="ProgTerm">Num</span>;&nbsp;&nbsp;&nbsp; <span
-    class="ProgComment">// число точек в линии</span><br>
+    class="ProgComment">// С‡РёСЃР»Рѕ С‚РѕС‡РµРє РІ Р»РёРЅРёРё</span><br>
     &nbsp;&nbsp; WORD <span class="ProgTerm">NumMax</span>; <span class="ProgComment">//
-    максимальное число точек в линии</span><br>
+    РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ С‡РёСЃР»Рѕ С‚РѕС‡РµРє РІ Р»РёРЅРёРё</span><br>
     &nbsp;&nbsp; <a href="MapO_ePoint.html">ePoint</a> * <span class="ProgTerm">Pnt</span>;
-      <span class="ProgComment">// массив элементарных
-    точек</span><br>
-    }; <span class="ProgComment">// размер структуры 8 байт</span></td>
+      <span class="ProgComment">// РјР°СЃСЃРёРІ СЌР»РµРјРµРЅС‚Р°СЂРЅС‹С…
+    С‚РѕС‡РµРє</span><br>
+    }; <span class="ProgComment">// СЂР°Р·РјРµСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ 8 Р±Р°Р№С‚</span></td>
   </tr>
 </table>
 
-<p>Элементарная линия входит в состав графических
-объектов линия, полоса и плоскость. </p>
+<p>Р­Р»РµРјРµРЅС‚Р°СЂРЅР°СЏ Р»РёРЅРёСЏ РІС…РѕРґРёС‚ РІ СЃРѕСЃС‚Р°РІ РіСЂР°С„РёС‡РµСЃРєРёС…
+РѕР±СЉРµРєС‚РѕРІ Р»РёРЅРёСЏ, РїРѕР»РѕСЃР° Рё РїР»РѕСЃРєРѕСЃС‚СЊ. </p>
 
-<p>Здесь:</p>
+<p>Р—РґРµСЃСЊ:</p>
 
-<p><span class="Refer">&lt;Num&gt;</span><strong> - </strong>число точек реально
-присутствующих в линии,</p>
+<p><span class="Refer">&lt;Num&gt;</span><strong> - </strong>С‡РёСЃР»Рѕ С‚РѕС‡РµРє СЂРµР°Р»СЊРЅРѕ
+РїСЂРёСЃСѓС‚СЃС‚РІСѓСЋС‰РёС… РІ Р»РёРЅРёРё,</p>
 
-<p><span class="Refer">&lt;NumMax&gt;</span><strong> - </strong>число точек,
-выделенных при создании массива <span class="Refer">&lt;Pnt&gt;</span>,</p>
+<p><span class="Refer">&lt;NumMax&gt;</span><strong> - </strong>С‡РёСЃР»Рѕ С‚РѕС‡РµРє,
+РІС‹РґРµР»РµРЅРЅС‹С… РїСЂРё СЃРѕР·РґР°РЅРёРё РјР°СЃСЃРёРІР° <span class="Refer">&lt;Pnt&gt;</span>,</p>
 
-<p><span class="Refer">&lt;Pnt&gt;</span><strong> - </strong>массив точек
-элементарной линии.</p>
+<p><span class="Refer">&lt;Pnt&gt;</span><strong> - </strong>РјР°СЃСЃРёРІ С‚РѕС‡РµРє
+СЌР»РµРјРµРЅС‚Р°СЂРЅРѕР№ Р»РёРЅРёРё.</p>
 
-<p>При создании элементарной линии оператором <strong>new
-</strong>создается массив точек с размером <span class="Refer">&lt;NumMax&gt;</span>
-на несколько значений больше чем <span class="Refer">&lt;Num&gt;</span>.
-При увеличении массива <span class="Refer">&lt;Pnt&gt;</span>
-меньше, чем <span class="Refer">&lt;NumMax&gt;</span> массив не <em>переаллокируется</em>,
-а лишь используются резервные точки массива и
-изменяется размер <span class="Refer">&lt;Num&gt;</span>. Таким
-образом при редактировании массива экономиться
-время на добавлении новых точек. </p>
+<p>РџСЂРё СЃРѕР·РґР°РЅРёРё СЌР»РµРјРµРЅС‚Р°СЂРЅРѕР№ Р»РёРЅРёРё РѕРїРµСЂР°С‚РѕСЂРѕРј <strong>new
+</strong>СЃРѕР·РґР°РµС‚СЃСЏ РјР°СЃСЃРёРІ С‚РѕС‡РµРє СЃ СЂР°Р·РјРµСЂРѕРј <span class="Refer">&lt;NumMax&gt;</span>
+РЅР° РЅРµСЃРєРѕР»СЊРєРѕ Р·РЅР°С‡РµРЅРёР№ Р±РѕР»СЊС€Рµ С‡РµРј <span class="Refer">&lt;Num&gt;</span>.
+РџСЂРё СѓРІРµР»РёС‡РµРЅРёРё РјР°СЃСЃРёРІР° <span class="Refer">&lt;Pnt&gt;</span>
+РјРµРЅСЊС€Рµ, С‡РµРј <span class="Refer">&lt;NumMax&gt;</span> РјР°СЃСЃРёРІ РЅРµ <em>РїРµСЂРµР°Р»Р»РѕРєРёСЂСѓРµС‚СЃСЏ</em>,
+Р° Р»РёС€СЊ РёСЃРїРѕР»СЊР·СѓСЋС‚СЃСЏ СЂРµР·РµСЂРІРЅС‹Рµ С‚РѕС‡РєРё РјР°СЃСЃРёРІР° Рё
+РёР·РјРµРЅСЏРµС‚СЃСЏ СЂР°Р·РјРµСЂ <span class="Refer">&lt;Num&gt;</span>. РўР°РєРёРј
+РѕР±СЂР°Р·РѕРј РїСЂРё СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёРё РјР°СЃСЃРёРІР° СЌРєРѕРЅРѕРјРёС‚СЊСЃСЏ
+РІСЂРµРјСЏ РЅР° РґРѕР±Р°РІР»РµРЅРёРё РЅРѕРІС‹С… С‚РѕС‡РµРє. </p>
 
-<p class="Remark">Смотри также:</p>
+<p class="Remark">РЎРјРѕС‚СЂРё С‚Р°РєР¶Рµ:</p>
 
-<p class="Notice"><a href="MapO_Object.html">Общий заголовок графического
-объекта <strong>(MapObject)</strong></a></p>
+<p class="Notice"><a href="MapO_Object.html">РћР±С‰РёР№ Р·Р°РіРѕР»РѕРІРѕРє РіСЂР°С„РёС‡РµСЃРєРѕРіРѕ
+РѕР±СЉРµРєС‚Р° <strong>(MapObject)</strong></a></p>
 
-<p class="Notice"><a href="MapO_ePoint.html">Формат элементарной точки (ePoint)</a></p>
+<p class="Notice"><a href="MapO_ePoint.html">Р¤РѕСЂРјР°С‚ СЌР»РµРјРµРЅС‚Р°СЂРЅРѕР№ С‚РѕС‡РєРё (ePoint)</a></p>
 </body>
 </html>
