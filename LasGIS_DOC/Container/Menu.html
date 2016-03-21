@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <link rel="stylesheet" type="text/css" href="../../images/default.css">
+    <link rel="stylesheet" type="text/css" href="../../images/menu.css">
+    <script type="text/javascript">ImagePrefix = "../../images/";</script>
+    <script type="text/javascript" src="../../images/menu.js"></script>
+    <title>menu on documents of LasGIS</title>
+    <base target="target_doc">
+  </head>
+<body class="marginzero" language='javascript' onload="return window_onload()">
+<div name='MyMenu' id='MyMenu'></div>
+<p id='TestString'></p>
+</body>
+
+<script ID='clientEventHandlersJS' language='javascript'>
+//<!--
+var StructMenu = new Array(
+  1, true, "Container.html", "Внутренний формат файла-контейнера.",
+  2, true, "Container.html", "Формат файла - контейнера.",
+  3, true, "API_Container.html", "API доступа к данным Контейнера",
+  3, true, "Global_CFG.html", "Конфигурация предприятия",
+  3, true, "Main_CFG.html", "ФАЙЛ главной конфигурации проекта",
+  3, true, "User_CFG.html", "Пользовательская конфигурация проекта",
+  3, true, "Objects_File.html", "Тематический слой графических объектов карты",
+  2, true, "Container_Old.html", "Старый формат файла - контейнера.",
+  3, true, "Main_CFG_Old.html", "Главная конфигурация проекта (старый формат)",
+  3, true, "User_CFG_Old.html", "Пользовательская конфигурация проекта (старый формат)",
+  3, true, "Objects_File_Old.html", "Тематический слой графических объектов карты (старый формат)",
+  3, true, "../Rules/EditMapo.html", "Правила редактирования графических объектов карты"
+); 
+
+function window_onload() {
+  LoadMenu();
+}
+//-->
+</script>
+
+</html>

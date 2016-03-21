@@ -1,0 +1,219 @@
+BODY {
+  margin-top: 1px;
+  background-color: #ffffff; /*background: url(live11.gif) fixed center center;*/
+  margin-bottom: 1px;
+  padding-bottom: 1px;
+  color: black;
+  padding-top: 1px;
+  font-family: Arial, sans-serif
+}
+
+P {
+  margin-top: 6px;
+  font-size: 100%;
+  margin-bottom: 12px;
+  color: black;
+  font-family: Arial,sans-serif;
+  text-align: justify
+}
+
+H1 {
+  border-top: maroon 6px double;
+  margin-top: 32px;
+  font-weight: bolder;
+  font-size: 160%;
+  color: maroon;
+  font-family: Arial,sans-serif
+}
+
+H2 {
+  border-top: maroon 4px double;
+  margin-top: 26px;
+  font-weight: bolder;
+  font-size: 145%;
+  color: maroon;
+  font-style: italic;
+  font-family: Arial,sans-serif
+}
+
+H3 {
+  border-top: maroon 2px solid;
+  margin-top: 20px;
+  font-weight: bolder;
+  font-size: 135%;
+  color: maroon;
+  font-family: Arial,sans-serif
+}
+
+H4 {
+  margin-top: 16px;
+  font-weight: bolder;
+  font-size: 120%;
+  color: maroon;
+  font-style: italic;
+  font-family: Arial,sans-serif
+}
+
+H5 {
+  margin-top: 12px;
+  font-weight: bolder;
+  font-size: 110%;
+  color: maroon;
+  font-family: Arial,sans-serif
+}
+
+H6 {
+  margin-top: 12px;
+  font-weight: bolder;
+  font-size: 100%;
+  color: maroon;
+  font-style: italic;
+  font-family: Arial,sans-serif
+}
+
+A {
+  font-weight: bolder;
+  font-family: Arial,sans-serif
+}
+
+A:active {
+  color: red;
+  font-family: Arial,sans-serif
+}
+
+A:link {
+  color: blue;
+  font-family: Arial,sans-serif
+}
+
+A:visited {
+  color: #8a2be2;
+  font-family: Arial,sans-serif
+}
+
+table {
+  font-family: 'Arial CYR', sans-serif;
+  position: static;
+  background-color: transparent
+}
+
+TH {
+  padding: 3px 10px;
+  font-weight: bolder;
+  color: navy;
+  font-family: 'Arial CYR', sans-serif;
+  background-color: silver
+}
+
+TR {
+  font-family: 'Arial CYR', sans-serif;
+  background-color: transparent
+}
+
+TD {
+  padding: 3px 6px;
+  font-family: 'Arial CYR', sans-serif;
+  background-color: transparent
+}
+
+.TableTiny {
+  border: 1px solid #5f9ea0;
+}
+
+.RefAdres {
+  color: #008b8b
+}
+
+.Refer {
+  font-weight: bolder;
+  color: #6b8e23;
+/*  font-family: Arial,sans-serif*/
+}
+
+.HiRefer {
+  font-weight: bolder;
+  font-size: 100%;
+  color: red;
+  font-family: Arial, sans-serif
+}
+
+BLOCKQUOTE {
+  color: green;
+  font-family: Arial,sans-serif
+}
+
+P.Remark {
+  border-top: #d3d3d3;
+  font-weight: bolder;
+  margin-bottom: 1px;
+  color: #3cb371;
+  border-bottom: silver thick solid;
+  font-family: Arial,sans-serif
+}
+
+P.Notice {
+  border-right: silver solid;
+  padding-right: 5px;
+  margin-top: 1px;
+  padding-left: 5px;
+  margin-bottom: 1px;
+  border-left: silver solid;
+  text-indent: 20pt;
+  text-align: justify
+}
+
+.Prog {
+  padding-right: 10mm;
+  padding-left: 10mm;
+  color: navy;
+  font-family: 'Lucida Console', 'Courier New Cyr', monospace;
+  text-align: left;
+  /*white-space: pre;*/
+}
+
+.ProgComment {
+  padding-right: 10px;
+  padding-left: 10px;
+  color: green;
+  font-family: 'Lucida Console', 'Courier New Cyr', monospace
+}
+
+.ProgTerm {
+  color: fuchsia;
+  font-family: 'Lucida Console', 'Courier New Cyr', monospace
+}
+
+P.Cont1 {
+  margin-top: 6px;
+  font-size: 100%;
+  margin-bottom: 12px;
+  text-align: left
+}
+
+P.Cont2 {
+  margin-top: 6px;
+  font-size: 90%;
+  margin-bottom: 6px;
+  text-align: left
+}
+
+P.Cont3 {
+  margin-top: 3px;
+  font-size: 85%;
+  margin-bottom: 6px;
+  text-align: left
+}
+
+P.Cont4 {
+  margin-top: 3px;
+  font-size: 85%;
+  margin-bottom: 3px;
+  text-align: left
+}
+
+P.Cont5 {
+  margin-top: 2px;
+  font-size: 85%;
+  margin-bottom: 2px;
+  text-align: left
+}
